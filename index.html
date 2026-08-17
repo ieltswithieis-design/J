@@ -9,7 +9,100 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <style>
+  <style>/* =========================================================
+   HUMRAAZ LOGO — REPLACES JA
+   ========================================================= */
+
+.brand-mark.brand-logo {
+    width: 72px;
+    height: 72px;
+    flex: 0 0 72px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+    margin: 0;
+
+    overflow: hidden;
+    border-radius: 16px;
+
+    background: #ffffff;
+
+    border: 1px solid rgba(76, 48, 102, 0.12);
+
+    box-shadow:
+        0 8px 22px rgba(76, 48, 102, 0.12);
+
+    box-sizing: border-box;
+}
+
+.brand-mark.brand-logo img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: contain;
+
+    /* DO NOT alter the supplied logo */
+    filter: none;
+    transform: none;
+}
+
+/* Keep Javeria's name perfectly aligned with the logo */
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+/* Professional subtitle */
+
+.brand > span:last-child {
+    line-height: 1.2;
+}
+
+.brand > span:last-child small {
+    display: block;
+    margin-top: 5px;
+
+    font-size: 0.72rem;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+
+    color: #60788a;
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .brand {
+        gap: 9px;
+    }
+
+    .brand-mark.brand-logo {
+        width: 58px;
+        height: 58px;
+        flex-basis: 58px;
+        border-radius: 13px;
+    }
+
+    .brand > span:last-child {
+        font-size: 0.92rem;
+    }
+
+    .brand > span:last-child small {
+        font-size: 0.55rem;
+        letter-spacing: 0.07em;
+    }
+}
+
     :root{
       --navy:#082f49; --navy2:#0f4c5c; --teal:#0f766e; --teal2:#14b8a6;
       --coral:#f97316; --purple:#7c3aed; --blue:#2563eb; --green:#16a34a;
@@ -138,7 +231,10 @@
       .selection-bar{align-items:flex-start;flex-direction:column}.form-card,.summary-card{padding:20px}.footer-inner{flex-direction:column;align-items:flex-start}
     }
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
-  </style>
+  .hero-logo-lockup{display:inline-flex;background:#fff;padding:8px;border-radius:15px;box-shadow:0 12px 35px rgba(0,0,0,.16);margin-bottom:10px}
+.hero-logo-lockup img{width:150px;height:150px;display:block;object-fit:contain}
+@media(max-width:560px){.hero-logo-lockup img{width:120px;height:120px}}
+</style>
 
 <style id="experience-enhancement">
 .experience-section{
@@ -272,18 +368,49 @@
 }
 </style>
 
+
+<link rel="icon" type="image/jpeg" href="assets/humraaz-logo.jpeg">
+<style id="humraaz-logo-integration">
+.brand-logo{
+  display:flex;align-items:center;text-decoration:none;flex:0 0 auto;
+  width:112px;height:66px;overflow:hidden;border-radius:10px;
+  background:#fff;box-shadow:0 8px 22px rgba(8,47,73,.08);
+}
+.brand-logo img{
+  display:block;width:100%;height:100%;object-fit:contain;
+  /* The supplied logo file is used exactly as provided. No filters, recoloring, or transforms. */
+}
+@media(max-width:700px){
+  .brand-logo{width:92px;height:56px}
+}
+</style>
+
 </head>
 <body>
   <div class="topbar"><div class="topbar-inner"><span><strong>Professional appointment requests</strong> · Applied Psychology & Educational Counseling</span><span>Private, respectful & purpose-focused</span></div></div>
-  <header>
-    <nav class="nav" aria-label="Main navigation">
-      <a class="brand" href="#top"><span class="brand-mark">JA</span><span>Javeria Atif<small>Psychology & Counseling</small></span></a>
-      <button class="hamb" id="hamb" aria-label="Open menu" aria-expanded="false">☰</button>
-      <div class="nav-links" id="navLinks">
-        <a href="#about">About</a><a href="#support">Appointment</a><a href="#experience">Experience</a><a href="#support" class="nav-cta">Request Appointment</a>
-      </div>
+<header>
+    <nav class="nav">
+
+        <a class="brand" href="#top">
+
+            <span class="brand-mark brand-logo">
+                <img
+                    src="assets/humraaz-logo.jpeg"
+                    alt="Humraaz — Your Story Stays Safe"
+                >
+            </span>
+
+            <span>
+                Javeria Atif
+                <small>Applied Psychology & Counseling</small>
+            </span>
+
+        </a>
+
+        ...
+
     </nav>
-  </header>
+</header>
 
   <main id="top">
     <section class="hero" aria-labelledby="hero-title">
@@ -452,7 +579,8 @@
 <section class="psychologist-focus">
   <div class="section">
     <div class="psych-focus-grid">
-      <div class="psych-focus-copy">
+      <div class="hero-logo-lockup"><img src="assets/humraaz-logo.jpeg" alt="Humraaz — Your Story Stays Safe"></div>
+<div class="psych-focus-copy">
         <span class="section-kicker">A space where you can finally be heard</span>
         <h2>You do not have to carry everything alone.</h2>
         <p class="psych-lead">Javeria Atif brings an Applied Psychology and Educational Counseling perspective to conversations with people who may have felt unheard, misunderstood, judged or unable to talk openly about what they have experienced.</p>
