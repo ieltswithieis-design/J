@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Professional appointment request page for Javeria Atif, Applied Psychology and Educational Counseling. Select areas of support, prepare your request, and continue via LinkedIn.">
+  <meta name="description" content="Professional appointment request page for Javeria Atif, Applied Psychology and Educational Counseling. Select areas of support, prepare your request, and continue via WhatsApp. LinkedIn is provided separately for professional credibility.">
   <meta name="theme-color" content="#082f49">
   <title>Javeria Atif | Applied Psychology & Educational Counseling</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -385,6 +385,34 @@
 }
 </style>
 
+
+<style id="javeria-final-mobile-navigation">
+/* FINAL MOBILE NAVIGATION: Back + Hamburger; removes the old three-dot placeholder */
+.nav { position:relative; }
+.nav-links { margin-left:auto; display:flex; align-items:center; gap:25px; }
+.nav-links a { text-decoration:none; font-weight:600; color:#365064; }
+.nav-links a:hover { color:#0f766e; }
+.mobile-controls, .mobile-navigation { display:none; }
+@media (max-width:700px) {
+  .nav-links { display:none !important; }
+  .mobile-controls { margin-left:auto; display:flex; align-items:center; gap:8px; }
+  .mobile-back, .mobile-menu-toggle { width:44px; height:44px; padding:0; border:1px solid #d9e4e8; border-radius:13px; background:#fff; color:#082f49; cursor:pointer; display:flex; align-items:center; justify-content:center; box-shadow:0 5px 16px rgba(8,47,73,.09); -webkit-tap-highlight-color:transparent; transition:transform .18s ease,background .18s ease,box-shadow .18s ease; }
+  .mobile-back:active, .mobile-menu-toggle:active { transform:scale(.94); }
+  .mobile-back span { font-size:27px; line-height:1; font-weight:400; }
+  .mobile-menu-toggle { flex-direction:column; gap:5px; }
+  .mobile-menu-toggle span { width:21px; height:2px; border-radius:10px; background:#082f49; transition:transform .22s ease,opacity .16s ease; }
+  .mobile-menu-toggle.active span:nth-child(1) { transform:translateY(7px) rotate(45deg); }
+  .mobile-menu-toggle.active span:nth-child(2) { opacity:0; }
+  .mobile-menu-toggle.active span:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
+  .mobile-navigation { position:absolute; display:none; top:calc(100% + 10px); left:8px; right:8px; z-index:99999; padding:10px; background:rgba(255,255,255,.98); border:1px solid #dce7ec; border-radius:18px; box-shadow:0 20px 50px rgba(8,47,73,.17); backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px); }
+  .mobile-navigation.open { display:block; animation:javeriaMenuOpen .2s ease both; }
+  .mobile-navigation a { display:flex; align-items:center; min-height:52px; padding:0 16px; border-radius:12px; color:#082f49; text-decoration:none; font-size:1rem; font-weight:700; }
+  .mobile-navigation a:hover, .mobile-navigation a:active { background:#edf8f8; color:#0f766e; }
+}
+@media (min-width:701px) { .mobile-controls, .mobile-navigation { display:none !important; } }
+@keyframes javeriaMenuOpen { from { opacity:0; transform:translateY(-8px); } to { opacity:1; transform:translateY(0); } }
+</style>
+
 </head>
 <body>
   <div class="topbar"><div class="topbar-inner"><span><strong>Professional appointment requests</strong> · Applied Psychology & Educational Counseling</span><span>Private, respectful & purpose-focused</span></div></div>
@@ -407,7 +435,26 @@
 
         </a>
 
-        ...
+        <div class="nav-links" aria-label="Primary navigation">
+            <a href="#about">About</a>
+            <a href="#support">Appointment</a>
+            <a href="#experience">Experience</a>
+        </div>
+
+        <div class="mobile-controls" aria-label="Mobile navigation controls">
+            <button class="mobile-back" id="mobileBack" type="button" aria-label="Go back" title="Go back">
+                <span aria-hidden="true">←</span>
+            </button>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mobileNavigation" title="Open navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+
+        <div class="mobile-navigation" id="mobileNavigation" aria-label="Mobile navigation">
+            <a href="#about">About</a>
+            <a href="#support">Appointment</a>
+            <a href="#experience">Experience</a>
+        </div>
 
     </nav>
 </header>
@@ -713,6 +760,44 @@
     <div class="footer-inner"><div><strong>Javeria Atif</strong><br><span>Applied Psychology & Educational Counseling</span></div><a href="https://www.linkedin.com/in/javeria-atif-a07320261?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer">View professional LinkedIn profile ↗</a></div>
   </footer>
   <button class="backtop" id="backtop" aria-label="Back to top">↑</button>
+
+<script id="javeria-final-mobile-navigation-js">
+(() => {
+  "use strict";
+  const menuButton=document.getElementById("mobileMenuToggle");
+  const menu=document.getElementById("mobileNavigation");
+  const backButton=document.getElementById("mobileBack");
+  function closeMenu(){
+    if(!menu||!menuButton) return;
+    menu.classList.remove("open");
+    menuButton.classList.remove("active");
+    menuButton.setAttribute("aria-expanded","false");
+    menuButton.setAttribute("aria-label","Open navigation");
+  }
+  if(menuButton&&menu){
+    menuButton.addEventListener("click",e=>{
+      e.stopPropagation();
+      const open=menu.classList.toggle("open");
+      menuButton.classList.toggle("active",open);
+      menuButton.setAttribute("aria-expanded",open?"true":"false");
+      menuButton.setAttribute("aria-label",open?"Close navigation":"Open navigation");
+    });
+    menu.querySelectorAll("a").forEach(a=>a.addEventListener("click",closeMenu));
+    document.addEventListener("click",e=>{
+      if(menu.classList.contains("open")&&!menu.contains(e.target)&&!menuButton.contains(e.target)) closeMenu();
+    });
+  }
+  if(backButton){
+    backButton.addEventListener("click",()=>{
+      closeMenu();
+      if(window.history.length>1) window.history.back();
+      else window.location.hash="top";
+    });
+  }
+  document.addEventListener("keydown",e=>{ if(e.key==="Escape") closeMenu(); });
+  window.addEventListener("resize",()=>{ if(window.innerWidth>700) closeMenu(); });
+})();
+</script>
 
 <script>
 (() => {
