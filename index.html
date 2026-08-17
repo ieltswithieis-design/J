@@ -1,0 +1,745 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Professional appointment request page for Javeria Atif, Applied Psychology and Educational Counseling. Select areas of support, prepare your request, and continue via LinkedIn.">
+  <meta name="theme-color" content="#082f49">
+  <title>Javeria Atif | Applied Psychology & Educational Counseling</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --navy:#082f49; --navy2:#0f4c5c; --teal:#0f766e; --teal2:#14b8a6;
+      --coral:#f97316; --purple:#7c3aed; --blue:#2563eb; --green:#16a34a;
+      --ink:#102a43; --muted:#5b7083; --paper:#f8fbfc; --white:#fff;
+      --line:#dce7ec; --shadow:0 18px 50px rgba(8,47,73,.12);
+      --radius:22px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",system-ui,sans-serif;line-height:1.6}
+    a{color:inherit}
+    button,input,textarea{font:inherit}
+    .topbar{background:linear-gradient(90deg,var(--navy),var(--navy2));color:#dff8f5;font-size:.9rem}
+    .topbar-inner{max-width:1180px;margin:auto;padding:9px 22px;display:flex;justify-content:space-between;gap:18px;align-items:center}
+    .topbar strong{color:#fff}
+    header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(220,231,236,.85)}
+    .nav{max-width:1180px;margin:auto;padding:15px 22px;display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-weight:800;color:var(--navy)}
+    .brand-mark{width:42px;height:42px;border-radius:13px;display:grid;place-items:center;color:white;background:linear-gradient(135deg,var(--teal),var(--blue));box-shadow:0 8px 22px rgba(15,118,110,.24);font-weight:800}
+    .brand small{display:block;color:var(--muted);font-weight:600;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase}
+    .nav-links{display:flex;align-items:center;gap:25px}
+    .nav-links a{text-decoration:none;font-weight:600;color:#365064}
+    .nav-links a:hover{color:var(--teal)}
+    .nav-cta{padding:11px 16px!important;border-radius:12px;background:var(--navy);color:white!important}
+    .hamb{display:none;border:0;background:transparent;font-size:1.7rem;color:var(--navy);cursor:pointer}
+    .hero{position:relative;overflow:hidden;background:linear-gradient(135deg,#eefbf9 0%,#f8fbff 52%,#fff4ed 100%)}
+    .hero:before,.hero:after{content:"";position:absolute;border-radius:50%;filter:blur(1px);opacity:.45}
+    .hero:before{width:300px;height:300px;background:#99f6e4;right:-120px;top:-100px}
+    .hero:after{width:230px;height:230px;background:#fed7aa;left:-120px;bottom:-120px}
+    .hero-grid{max-width:1180px;margin:auto;padding:72px 22px 76px;display:grid;grid-template-columns:1.15fr .85fr;gap:45px;align-items:center;position:relative;z-index:1}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;background:#dff7f3;color:var(--teal);font-weight:800;font-size:.82rem;text-transform:uppercase;letter-spacing:.07em}
+    h1,h2,h3{line-height:1.15}
+    h1{font-family:"Playfair Display",serif;font-size:clamp(2.6rem,5vw,4.65rem);margin:18px 0 18px;color:var(--navy);letter-spacing:-.03em}
+    .hero-copy{font-size:1.12rem;max-width:670px;color:#486276}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin:27px 0}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 18px;border-radius:13px;text-decoration:none;font-weight:800;border:1px solid transparent;cursor:pointer;transition:.2s transform,.2s box-shadow,.2s background}
+    .btn:hover{transform:translateY(-2px)}
+    .btn-primary{background:var(--navy);color:#fff;box-shadow:0 10px 24px rgba(8,47,73,.2)}
+    .btn-secondary{background:#fff;color:var(--navy);border-color:#cbdbe2}
+    .trust-row{display:flex;flex-wrap:wrap;gap:9px;color:#516879;font-size:.88rem;font-weight:600}
+    .trust-row span{padding:6px 9px;background:rgba(255,255,255,.72);border:1px solid #dce7ec;border-radius:999px}
+    .portrait-card{background:#fff;border:1px solid #d9e7ec;border-radius:32px;padding:15px;box-shadow:var(--shadow);transform:rotate(1deg)}
+    .portrait-card img{width:100%;display:block;border-radius:25px;aspect-ratio:1/1;object-fit:cover}
+    .portrait-caption{display:flex;justify-content:space-between;gap:15px;padding:15px 6px 4px;align-items:center}
+    .portrait-caption strong{font-size:1.05rem}.portrait-caption span{color:var(--muted);font-size:.84rem}
+    section{scroll-margin-top:90px}
+    .section{max-width:1180px;margin:auto;padding:78px 22px}
+    .section-head{max-width:760px;margin-bottom:35px}
+    .section-kicker{color:var(--teal);font-weight:800;text-transform:uppercase;letter-spacing:.1em;font-size:.8rem}
+    h2{font-family:"Playfair Display",serif;font-size:clamp(2rem,4vw,3.2rem);color:var(--navy);margin:9px 0 12px}
+    .lead{color:var(--muted);font-size:1.05rem}
+    .feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .feature{padding:25px;border:1px solid var(--line);border-radius:var(--radius);background:#fff;transition:.22s;box-shadow:0 6px 22px rgba(8,47,73,.05)}
+    .feature:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+    .icon{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;font-size:1.35rem;margin-bottom:14px}
+    .i-teal{background:#dff7f3}.i-purple{background:#ede9fe}.i-orange{background:#ffedd5}.i-blue{background:#dbeafe}.i-green{background:#dcfce7}.i-coral{background:#ffe4e6}
+    .feature h3{margin:0 0 7px;color:var(--navy)}.feature p{margin:0;color:var(--muted)}
+    .contact-strip{margin-top:24px;padding:20px 22px;border:1px solid #cfe1e7;border-radius:20px;background:linear-gradient(135deg,#ffffff,#f1fbfa);display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .contact-strip strong{display:block;color:var(--navy);font-size:1.05rem}.contact-strip span{display:block;color:var(--muted);font-size:.88rem;margin-top:2px}
+    .contact-actions{display:flex;gap:9px;flex-wrap:wrap}.btn-wa{background:#16a34a;color:#fff;box-shadow:0 9px 20px rgba(22,163,74,.18)}
+    .appointment-hub{background:linear-gradient(180deg,#eef8f8 0%,#f8fbfc 100%);border-top:1px solid #dbe9ed;border-bottom:1px solid #dbe9ed}
+    .appointment-flow{background:#fff;border:1px solid var(--line);border-radius:28px;padding:26px;box-shadow:var(--shadow)}
+    .flow-step{display:flex;align-items:center;gap:13px;margin:2px 0 18px}
+    .step-number{flex:0 0 38px;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--navy);color:#fff;font-weight:900}
+    .flow-step strong{display:block;color:var(--navy);font-size:1rem}.flow-step span{display:block;color:var(--muted);font-size:.84rem}
+    .form-step{margin-top:28px;padding-top:25px;border-top:1px solid #e2edf1}
+    .appointment-hub .support-grid{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:10px}
+    .appointment-hub .topic{display:block!important;visibility:visible!important;opacity:1!important;width:100%;min-height:112px}
+
+    .appointment-hub .support-grid{margin-top:8px}
+    .appointment-hub .topic-icon{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:9px;background:#e7f5f4;margin-bottom:8px;font-size:1rem}
+    .custom-concern{margin-top:14px;padding:16px;border:1px solid #9bd8d2;border-radius:16px;background:#f0fbfa}
+    .custom-concern label{display:block;color:var(--navy);font-weight:800;margin-bottom:8px}
+    .custom-concern label span{font-weight:500;color:var(--muted);font-size:.82rem}
+    .custom-concern textarea{width:100%;min-height:100px;border:1px solid #cbdde3;border-radius:12px;padding:12px 14px;resize:vertical;background:#fff;color:var(--ink);font:inherit}
+    .appointment-hub .topic{border:1px solid #d5e3e8;background:#f8fbfc;color:var(--ink);border-radius:16px;padding:16px;text-align:left;cursor:pointer;min-height:86px;transition:.18s;position:relative}
+    .appointment-hub .topic:hover{background:#eefaf8;transform:translateY(-2px);border-color:#a9ddd7}
+    .appointment-hub .topic.selected{background:#dff7f3;color:var(--navy);border-color:#72d8ce;box-shadow:0 8px 24px rgba(20,184,166,.16)}
+    .appointment-hub .topic.selected:after{content:"✓";position:absolute;right:11px;top:9px;font-weight:900;color:var(--teal)}
+    .appointment-hub .topic b{display:block;font-size:.98rem;margin-bottom:3px}.appointment-hub .topic span{font-size:.78rem;color:var(--muted)}
+    .light-selection{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-top:14px;padding:13px 15px;border:1px solid #dce8ec;border-radius:14px;background:#f7fafb}
+    .light-selection span{color:var(--muted);font-size:.88rem;font-weight:700}
+    .light-clear{background:#fff;border:1px solid #cbdbe2;color:var(--navy);padding:8px 12px;border-radius:10px;cursor:pointer;font-weight:700}
+    .summary-badge{display:inline-block;padding:5px 9px;border-radius:999px;background:#e0f2fe;color:#075985;font-size:.72rem;font-weight:900;letter-spacing:.06em}
+    .summary-note{font-size:.78rem;color:var(--muted);margin:13px 0 0}.summary-note a{color:var(--teal);font-weight:800}
+    .support-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+    .topic{border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.06);color:#edf8fb;border-radius:16px;padding:16px;text-align:left;cursor:pointer;min-height:86px;transition:.18s;position:relative}
+    .topic:hover{background:rgba(255,255,255,.11);transform:translateY(-2px)}
+    .topic.selected{background:#dff7f3;color:var(--navy);border-color:#8ce8dd;box-shadow:0 8px 24px rgba(20,184,166,.2)}
+    .topic.selected:after{content:"✓";position:absolute;right:11px;top:9px;font-weight:900;color:var(--teal)}
+    .topic b{display:block;font-size:.98rem;margin-bottom:3px}.topic span{font-size:.78rem;opacity:.8}
+    .selection-bar{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-top:20px;padding:15px;border:1px solid rgba(255,255,255,.15);border-radius:16px;background:rgba(255,255,255,.05)}
+    .selection-bar span{color:#c8dce6;font-size:.9rem}.clear{background:transparent;border:1px solid rgba(255,255,255,.35);color:#fff;padding:8px 12px;border-radius:10px;cursor:pointer;font-weight:700}
+    .form-section{background:#f0f8fa}
+    .form-grid{display:grid;grid-template-columns:1fr .72fr;gap:25px;align-items:start}
+    .form-card,.summary-card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:28px;box-shadow:0 10px 30px rgba(8,47,73,.07)}
+    .fields{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field.full{grid-column:1/-1}
+    label{display:block;font-weight:800;color:var(--navy);font-size:.9rem;margin-bottom:7px}
+    input,textarea,select{width:100%;border:1px solid #cbdbe2;border-radius:12px;padding:12px 13px;background:#fff;color:var(--ink);outline:none;transition:.18s}
+    input:focus,textarea:focus,select:focus{border-color:var(--teal2);box-shadow:0 0 0 4px rgba(20,184,166,.1)}
+    textarea{min-height:125px;resize:vertical}.hint{font-size:.78rem;color:var(--muted);margin-top:5px}
+    .error{color:#b91c1c;font-size:.78rem;min-height:18px;margin-top:4px}
+    .consent{display:flex;gap:9px;align-items:flex-start;font-size:.8rem;color:var(--muted);margin:10px 0}.consent input{width:auto;margin-top:4px}
+    .summary-card{position:sticky;top:105px}.summary-empty{color:var(--muted);padding:10px 0}
+    .summary-list{padding:0;margin:0;list-style:none}.summary-list li{padding:9px 0;border-bottom:1px solid #e7eef2;font-size:.9rem}.summary-list li strong{color:var(--navy)}
+    .summary-actions{display:grid;gap:10px;margin-top:17px}
+    .status{margin-top:13px;padding:11px 12px;border-radius:11px;background:#ecfdf5;color:#166534;font-size:.85rem;display:none}
+    .status.show{display:block}.status.bad{background:#fff1f2;color:#9f1239}
+    .timeline{position:relative;margin-top:25px}.timeline:before{content:"";position:absolute;left:12px;top:0;bottom:0;width:2px;background:#cfe3e9}
+    .timeline-item{position:relative;padding:0 0 30px 44px}.dot{position:absolute;left:4px;top:4px;width:18px;height:18px;border:4px solid #fff;background:var(--teal2);border-radius:50%;box-shadow:0 0 0 2px #a8e9e2}
+    .date{font-weight:800;color:var(--coral);font-size:.82rem}.timeline h3{margin:3px 0;color:var(--navy)}.timeline p{margin:0;color:var(--muted)}
+    .edu-card{background:linear-gradient(135deg,#fff,#f3f8fb);border:1px solid var(--line);padding:25px;border-radius:22px}
+    .edu-card h3{margin:0;color:var(--navy)}.grade{display:inline-block;margin-top:10px;padding:6px 10px;border-radius:999px;background:#dcfce7;color:#166534;font-weight:800;font-size:.8rem}
+    .disclaimer{background:#fff7ed;border:1px solid #fed7aa;border-left:5px solid var(--coral);padding:18px 20px;border-radius:14px;color:#7c2d12}
+    footer{background:#061f31;color:#d7e6ed}.footer-inner{max-width:1180px;margin:auto;padding:40px 22px;display:flex;justify-content:space-between;gap:25px;align-items:center}.footer-inner strong{color:#fff}.footer-inner a{color:#8ee8de;font-weight:800;text-decoration:none}
+    .backtop{position:fixed;right:18px;bottom:18px;width:45px;height:45px;border-radius:50%;border:1px solid #cbdbe2;background:#fff;color:var(--navy);box-shadow:var(--shadow);cursor:pointer;display:none}
+    .backtop.show{display:block}
+    @media(max-width:900px){
+      .hero-grid,.form-grid{grid-template-columns:1fr}.portrait-card{max-width:520px;margin:auto}.feature-grid{grid-template-columns:1fr 1fr}.support-grid{grid-template-columns:1fr 1fr}.appointment-hub .support-grid{grid-template-columns:1fr 1fr}.summary-card{position:static}
+    }
+    @media(max-width:700px){
+      .contact-strip{align-items:flex-start;flex-direction:column}.contact-actions{width:100%}.contact-actions .btn{flex:1}.appointment-flow{padding:18px}.light-selection{align-items:flex-start;flex-direction:column}
+      .topbar-inner{font-size:.75rem}.topbar-inner span:last-child{display:none}
+      .hamb{display:block}.nav-links{display:none;position:absolute;left:12px;right:12px;top:74px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:10px;box-shadow:var(--shadow);flex-direction:column;align-items:stretch}.nav-links.open{display:flex}.nav-links a{padding:11px 12px}.nav-cta{text-align:center}
+      .hero-grid{padding-top:50px}.hero-copy{font-size:1rem}.section{padding:58px 18px}.feature-grid,.support-grid,.fields,.appointment-hub .support-grid{grid-template-columns:1fr}.field.full{grid-column:auto}
+      .selection-bar{align-items:flex-start;flex-direction:column}.form-card,.summary-card{padding:20px}.footer-inner{flex-direction:column;align-items:flex-start}
+    }
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+  </style>
+
+<style id="experience-enhancement">
+.experience-section{
+  position:relative;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 8% 12%,rgba(20,184,166,.16),transparent 28%),
+    radial-gradient(circle at 92% 25%,rgba(124,58,237,.13),transparent 28%),
+    linear-gradient(180deg,#f7fbfc 0%,#eef7f8 100%);
+}
+.experience-section:before{
+  content:"";
+  position:absolute;inset:0;pointer-events:none;
+  background-image:linear-gradient(rgba(8,47,73,.035) 1px,transparent 1px),
+                   linear-gradient(90deg,rgba(8,47,73,.035) 1px,transparent 1px);
+  background-size:38px 38px;
+}
+.experience-section .section{position:relative;z-index:1}
+.experience-intro{
+  display:grid;grid-template-columns:1.7fr .9fr;gap:20px;align-items:stretch;margin:26px 0 34px;
+}
+.experience-highlight{
+  display:flex;gap:18px;align-items:flex-start;padding:26px 28px;border-radius:24px;
+  background:linear-gradient(135deg,#082f49,#0f766e);
+  color:#fff;box-shadow:0 22px 55px rgba(8,47,73,.18);position:relative;overflow:hidden;
+}
+.experience-highlight:after{
+  content:"";position:absolute;width:190px;height:190px;border-radius:50%;
+  border:35px solid rgba(255,255,255,.08);right:-65px;top:-65px;
+}
+.highlight-icon{
+  width:58px;height:58px;display:grid;place-items:center;border-radius:17px;
+  background:rgba(255,255,255,.15);font-size:1.65rem;flex:0 0 58px;
+}
+.experience-highlight strong{font-size:1.12rem;display:block;margin-bottom:7px}
+.experience-highlight p{margin:0;color:#d9f4f0;line-height:1.7}
+.experience-stats{
+  display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:12px;
+  background:#fff;border:1px solid #d8e8ec;border-radius:24px;box-shadow:0 15px 40px rgba(8,47,73,.08);
+}
+.experience-stats div{
+  border-radius:18px;padding:18px;background:linear-gradient(145deg,#fff,#f1f9f9);
+  border:1px solid #e0edef;display:flex;flex-direction:column;justify-content:center;
+}
+.experience-stats b{font-size:1.05rem;color:#082f49}.experience-stats span{color:#5b7180;font-size:.8rem;margin-top:3px}
+.timeline{position:relative;max-width:1000px;margin:0 auto;padding:8px 0 10px}
+.timeline:before{
+  content:"";position:absolute;left:25px;top:15px;bottom:15px;width:3px;
+  background:linear-gradient(#14b8a6,#7c3aed,#f97316,#2563eb);
+  border-radius:10px;
+}
+.timeline-item{position:relative;padding-left:70px;margin:0 0 18px}
+.timeline-dot{
+  position:absolute;left:0;top:10px;width:52px;height:52px;border-radius:17px;
+  display:grid;place-items:center;background:#fff;border:3px solid #14b8a6;
+  color:#082f49;font-weight:900;box-shadow:0 9px 24px rgba(8,47,73,.13);z-index:2;
+}
+.timeline-item:nth-child(2) .timeline-dot{border-color:#7c3aed}
+.timeline-item:nth-child(3) .timeline-dot{border-color:#f97316}
+.timeline-item:nth-child(4) .timeline-dot{border-color:#2563eb}
+.timeline-item:nth-child(5) .timeline-dot{border-color:#0f766e;font-size:1.35rem}
+.timeline-card{
+  background:rgba(255,255,255,.94);border:1px solid #d9e7eb;border-radius:22px;
+  padding:23px 25px;box-shadow:0 12px 32px rgba(8,47,73,.07);
+  transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease;
+}
+.timeline-card:hover{transform:translateY(-4px);box-shadow:0 20px 44px rgba(8,47,73,.13);border-color:#9bd8d2}
+.timeline-item.featured .timeline-card{border:2px solid #8bd8d1;box-shadow:0 18px 45px rgba(20,184,166,.13)}
+.timeline-tag{
+  display:inline-flex;padding:6px 10px;border-radius:999px;background:#e7f8f6;color:#0f766e;
+  font-size:.72rem;font-weight:900;text-transform:uppercase;letter-spacing:.04em;margin-bottom:8px;
+}
+.timeline-card h3{margin:0;color:#082f49;font-size:1.18rem}.timeline-place{font-weight:800;color:#516b79;margin:5px 0 9px}
+.timeline-card p:not(.timeline-place){color:#5b7180;line-height:1.65;margin:0}
+.experience-note{
+  margin:30px auto 0;max-width:1000px;display:flex;gap:12px;align-items:center;padding:17px 20px;
+  border-left:5px solid #f97316;background:#fff7ed;border-radius:14px;color:#6b4a2c;
+}
+.experience-note strong{color:#9a4b09;white-space:nowrap}.experience-note span{line-height:1.5}
+@media(max-width:800px){
+  .experience-intro{grid-template-columns:1fr}.experience-highlight{padding:22px}.experience-stats{min-height:160px}
+  .timeline:before{left:20px}.timeline-item{padding-left:58px}.timeline-dot{width:42px;height:42px;border-radius:14px}
+  .timeline-card{padding:19px}.experience-note{align-items:flex-start;flex-direction:column}
+}
+</style>
+
+
+<style id="psychologist-visual-enhancement">
+.psychologist-focus{
+  position:relative;overflow:hidden;background:
+  radial-gradient(circle at 12% 20%,rgba(20,184,166,.20),transparent 27%),
+  radial-gradient(circle at 88% 18%,rgba(124,58,237,.18),transparent 29%),
+  linear-gradient(135deg,#062c43 0%,#083f58 47%,#0f766e 100%);
+  color:#fff;
+}
+.psychologist-focus:before{content:"";position:absolute;inset:0;opacity:.13;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:22px 22px}
+.psych-focus-grid{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:35px;align-items:center;min-height:520px}
+.psych-focus-copy{position:relative;z-index:2;max-width:700px}
+.psych-focus-copy .section-kicker{color:#7ee8de;background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.18)}
+.psych-focus-copy h2{font-size:clamp(2.35rem,5vw,4.4rem);line-height:1.02;color:#fff;margin:16px 0 20px;letter-spacing:-.045em}
+.psych-focus-copy p{color:#d5ebee;font-size:1.03rem;line-height:1.78}
+.psych-focus-copy .psych-lead{font-size:1.17rem;color:#f0fbfb}
+.psych-pills{display:flex;flex-wrap:wrap;gap:9px;margin:22px 0 27px}
+.psych-pills span{padding:9px 12px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.09);border-radius:999px;font-size:.77rem;font-weight:800;color:#e5fbf8;backdrop-filter:blur(8px)}
+.psych-visual{position:relative;min-height:430px;display:grid;place-items:center}
+.brain-glow{width:185px;height:185px;border-radius:50%;display:grid;place-items:center;font-size:5.4rem;background:radial-gradient(circle,#dffbf8 0%,#8be6dc 31%,rgba(20,184,166,.2) 69%,transparent 70%);box-shadow:0 0 90px rgba(91,234,220,.35);animation:brainFloat 5s ease-in-out infinite;z-index:2}
+.orbit{position:absolute;border:1px solid rgba(255,255,255,.22);border-radius:50%;transform:rotate(-22deg)}
+.orbit-one{width:330px;height:210px}.orbit-two{width:420px;height:275px;transform:rotate(24deg);border-color:rgba(255,255,255,.12)}
+.floating-card{position:absolute;z-index:3;display:flex;flex-direction:column;padding:13px 16px;border-radius:16px;background:rgba(255,255,255,.94);color:#082f49;box-shadow:0 18px 38px rgba(0,0,0,.18);animation:cardFloat 5s ease-in-out infinite}
+.floating-card span{font-size:.72rem;color:#607583;margin-top:3px}.card-one{left:2%;top:14%}.card-two{right:0;top:32%;animation-delay:1s}.card-three{left:14%;bottom:10%;animation-delay:2s}
+@keyframes brainFloat{50%{transform:translateY(-10px) scale(1.03)}}@keyframes cardFloat{50%{transform:translateY(-7px)}}
+.therapy-approach{background:linear-gradient(180deg,#fff 0%,#f4fafb 100%);position:relative}
+.centered{text-align:center;max-width:850px;margin-left:auto;margin-right:auto}
+.therapy-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+.therapy-cards article{background:#fff;border:1px solid #dbe9ed;border-radius:22px;padding:24px;box-shadow:0 12px 34px rgba(8,47,73,.07);transition:transform .2s,box-shadow .2s,border-color .2s;position:relative;overflow:hidden}
+.therapy-cards article:before{content:"";position:absolute;left:0;top:0;width:100%;height:4px;background:linear-gradient(90deg,#14b8a6,#7c3aed,#f97316)}
+.therapy-cards article:hover{transform:translateY(-7px);box-shadow:0 24px 50px rgba(8,47,73,.13);border-color:#a8d9d5}
+.therapy-icon{display:grid;place-items:center;width:52px;height:52px;border-radius:16px;background:#eaf8f7;font-size:1.45rem;margin-bottom:14px}
+.therapy-cards h3{margin:0 0 8px;color:#082f49}.therapy-cards p{margin:0;color:#5c7180;line-height:1.65;font-size:.9rem}
+.therapy-boundary{margin:25px auto 0;max-width:1000px;padding:16px 19px;border-left:5px solid #7c3aed;background:#f5f3ff;color:#51466f;border-radius:13px;line-height:1.6;font-size:.86rem}
+.therapy-boundary strong{color:#5b21b6}
+@media(max-width:850px){
+ .psych-focus-grid{grid-template-columns:1fr;min-height:auto;padding:25px 0 45px}.psych-focus-copy h2{font-size:2.65rem}
+ .psych-visual{min-height:340px}.therapy-cards{grid-template-columns:1fr 1fr}
+}
+@media(max-width:560px){
+ .psych-focus-copy h2{font-size:2.2rem}.psych-focus-copy .psych-lead{font-size:1rem}
+ .psych-visual{min-height:300px}.brain-glow{width:140px;height:140px;font-size:4rem}.orbit-one{width:260px;height:170px}.orbit-two{width:315px;height:205px}
+ .floating-card{font-size:.8rem}.card-one{left:0}.card-two{right:0}.card-three{left:3%}
+ .therapy-cards{grid-template-columns:1fr}
+}
+</style>
+
+</head>
+<body>
+  <div class="topbar"><div class="topbar-inner"><span><strong>Professional appointment requests</strong> · Applied Psychology & Educational Counseling</span><span>Private, respectful & purpose-focused</span></div></div>
+  <header>
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="#top"><span class="brand-mark">JA</span><span>Javeria Atif<small>Psychology & Counseling</small></span></a>
+      <button class="hamb" id="hamb" aria-label="Open menu" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a><a href="#support">Appointment</a><a href="#experience">Experience</a><a href="#support" class="nav-cta">Request Appointment</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-grid">
+        <div>
+          <span class="eyebrow">Applied Psychology • Educational Counseling</span>
+          <h1>Thoughtful support for difficult moments and important decisions.</h1>
+          <p class="hero-copy">A professional, compassionate space led by Javeria Atif, an experienced Applied Psychology and Educational Counseling professional, for people navigating emotional challenges, academic pressure, life transitions, relationships, confidence, student adjustment and a wide range of personal and educational concerns. Start by choosing what you would like support with.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#support">Explore support areas →</a>
+            <a class="btn btn-secondary" href="#support">Prepare an appointment request</a>
+          </div>
+          <div class="trust-row"><span>🎓 Applied Psychology</span><span>🧠 Educational Counseling</span><span>💬 Student & Personal Support</span><span>🌱 Growth-focused</span></div>
+        </div>
+        <div class="portrait-card">
+          <img src="assets/javeria-atif-portrait.png" alt="Professional portrait of Javeria Atif">
+          <div class="portrait-caption"><div><strong>Javeria Atif</strong><br><span>Educational Counselor</span></div><span>Rawalpindi, Pakistan</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="section">
+        <div class="section-head"><span class="section-kicker">Professional focus</span><h2>Applied Psychology with an education-centered perspective</h2><p class="lead">Javeria Atif brings a broad, multidisciplinary professional background spanning Applied Psychology, Educational Counseling, student services, teaching, child-focused work and administrative coordination. Her work is grounded in attentive listening, professional communication, contextual understanding and practical guidance across a wide range of personal, academic and educational concerns. The approach is designed to listen carefully, understand context and help people move toward practical next steps.</p></div>
+        <div class="feature-grid">
+          <article class="feature"><div class="icon i-teal">🧠</div><h3>Applied Psychology</h3><p>Psychology-informed support for everyday emotional, behavioral, interpersonal and adjustment concerns.</p></article>
+          <article class="feature"><div class="icon i-blue">🎓</div><h3>Educational Counseling</h3><p>Support around academic pressure, student adjustment, education choices and future planning.</p></article>
+          <article class="feature"><div class="icon i-purple">💬</div><h3>Person-Centered Conversation</h3><p>A respectful setting where you can explain what is happening in your own words and at your own pace.</p></article>
+          <article class="feature"><div class="icon i-orange">🌱</div><h3>Personal Growth</h3><p>Build self-awareness, confidence, routines, communication skills and healthier ways of handling challenges.</p></article>
+          <article class="feature"><div class="icon i-green">👨‍👩‍👧</div><h3>Child & Family Context</h3><p>Experience in child psychology and education supports a broader understanding of developmental and family contexts.</p></article>
+          <article class="feature"><div class="icon i-coral">🧭</div><h3>Practical Direction</h3><p>Turn a complicated situation into clear priorities, questions and appropriate next steps.</p></article>
+        </div>
+        <div class="contact-strip" aria-label="Direct contact options">
+          <div><strong>Ready to reach out?</strong><span>Use WhatsApp to request an appointment. LinkedIn is available to review Javeria's professional background and credibility.</span></div>
+          <div class="contact-actions">
+            <a class="btn btn-wa" href="https://wa.me/923245346975" target="_blank" rel="noopener noreferrer">WhatsApp · 0324 5346975 ↗</a>
+            <a class="btn btn-secondary" href="https://www.linkedin.com/in/javeria-atif-a07320261?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer">Professional LinkedIn ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="support" class="appointment-hub">
+      <div class="section">
+        <div class="section-head">
+          <span class="section-kicker">Start your appointment request</span>
+          <h2>Tell Javeria what you would like help with</h2>
+          <p class="lead">Choose one or more areas below, then complete the short form immediately underneath. Everything is part of the same appointment-request process — there is no separate booking system.</p>
+        </div>
+
+        <div class="appointment-flow">
+          <div class="flow-step">
+            <div class="step-number">1</div>
+            <div>
+              <strong>Choose your area(s) of concern</strong>
+              <span>Select anything that describes what you would like to discuss.</span>
+            </div>
+          </div>
+
+          <div class="support-grid" id="topicGrid">
+            <button type="button" class="topic" data-topic="0" aria-pressed="false">
+              <span class="topic-icon">🧠</span><b>Trauma & difficult experiences</b><span>Support after distressing or overwhelming experiences.</span>
+            </button>
+            <button type="button" class="topic" data-topic="1" aria-pressed="false">
+              <span class="topic-icon">🌦️</span><b>Mood changes & emotional ups and downs</b><span>Understanding changes in mood, emotions or motivation.</span>
+            </button>
+            <button type="button" class="topic" data-topic="2" aria-pressed="false">
+              <span class="topic-icon">💭</span><b>Anxiety, worry & overthinking</b><span>Support with persistent worry, fear, uncertainty or racing thoughts.</span>
+            </button>
+            <button type="button" class="topic" data-topic="3" aria-pressed="false">
+              <span class="topic-icon">🌿</span><b>Stress & feeling overwhelmed</b><span>Managing pressure, overload, demands and emotional exhaustion.</span>
+            </button>
+            <button type="button" class="topic" data-topic="4" aria-pressed="false">
+              <span class="topic-icon">✨</span><b>Self-confidence & self-esteem</b><span>Building confidence, self-worth and a healthier self-image.</span>
+            </button>
+            <button type="button" class="topic" data-topic="5" aria-pressed="false">
+              <span class="topic-icon">📚</span><b>Academic pressure & study concerns</b><span>Support with academic stress, exams, study habits and performance pressure.</span>
+            </button>
+            <button type="button" class="topic" data-topic="6" aria-pressed="false">
+              <span class="topic-icon">🎯</span><b>Career & education decisions</b><span>Guidance around educational choices, career direction and future plans.</span>
+            </button>
+            <button type="button" class="topic" data-topic="7" aria-pressed="false">
+              <span class="topic-icon">🎓</span><b>Student adjustment & transition</b><span>Support with adapting to university, school, a new environment or routine.</span>
+            </button>
+            <button type="button" class="topic" data-topic="8" aria-pressed="false">
+              <span class="topic-icon">🤝</span><b>Relationships & communication</b><span>Exploring communication, boundaries, conflict and interpersonal challenges.</span>
+            </button>
+            <button type="button" class="topic" data-topic="9" aria-pressed="false">
+              <span class="topic-icon">🌱</span><b>Personal growth & self-understanding</b><span>Reflection, personal development, strengths and meaningful goals.</span>
+            </button>
+            <button type="button" class="topic" data-topic="10" aria-pressed="false">
+              <span class="topic-icon">👧</span><b>Child & adolescent concerns</b><span>Age-appropriate support around emotional, behavioural, school or developmental concerns.</span>
+            </button>
+            <button type="button" class="topic" data-topic="11" aria-pressed="false">
+              <span class="topic-icon">🌙</span><b>Sleep, routine & lifestyle concerns</b><span>Support with routines, sleep-related difficulties and everyday functioning.</span>
+            </button>
+            <button type="button" class="topic" data-topic="12" aria-pressed="false">
+              <span class="topic-icon">🔄</span><b>Life transitions & major changes</b><span>Support through separation, relocation, loss, new roles or other major changes.</span>
+            </button>
+            <button type="button" class="topic" data-topic="13" aria-pressed="false">
+              <span class="topic-icon">👨‍👩‍👧</span><b>Parent / student guidance</b><span>Guidance for parents, students and families around educational or personal concerns.</span>
+            </button>
+            <button type="button" class="topic" data-topic="14" aria-pressed="false">
+              <span class="topic-icon">💙</span><b>Emotional wellbeing & coping</b><span>Developing healthier coping strategies and understanding emotional responses.</span>
+            </button>
+            <button type="button" class="topic" data-topic="15" aria-pressed="false">
+              <span class="topic-icon">➕</span><b>Something else</b><span>Describe another concern that is not listed above.</span>
+            </button>
+          </div>
+
+          <noscript><div class="custom-concern" style="margin-top:14px"><strong>JavaScript is disabled.</strong> The concern areas are still visible, but interactive selection and WhatsApp preparation require JavaScript to be enabled.</div></noscript>
+          <div class="custom-concern" id="customConcernWrap" hidden>
+            <label for="customConcern"><strong>Something else — tell Javeria about your concern</strong> <span>(required when selected)</span></label>
+            <textarea id="customConcern" maxlength="500" placeholder="Describe the area you would like to discuss in your own words..."></textarea>
+            <div class="hint">Share only what you are comfortable sharing. Please do not include emergency information.</div>
+          </div>
+
+          <div class="selection-bar light-selection">
+            <span id="selectionCount">0 areas selected</span>
+            <button class="clear light-clear" id="clearTopics" type="button">Clear all</button>
+          </div>
+
+          <div class="flow-step form-step">
+            <div class="step-number">2</div>
+            <div>
+              <strong>Complete your appointment request</strong>
+              <span>Your selected areas will automatically be included in your request.</span>
+            </div>
+          </div>
+
+          <div class="form-grid">
+            <form class="form-card" id="appointmentForm" novalidate>
+              <div class="fields">
+                <div class="field"><label for="name">Your name *</label><input id="name" name="name" autocomplete="name" required maxlength="80" placeholder="Full name"><div class="error" id="nameError"></div></div>
+                <div class="field"><label for="contact">Preferred contact *</label><input id="contact" name="contact" autocomplete="email" required maxlength="120" placeholder="Email, phone or LinkedIn"><div class="error" id="contactError"></div></div>
+                <div class="field"><label for="age">Age group</label><select id="age" name="age"><option value="">Prefer not to say</option><option>Under 13 (parent/guardian should make contact)</option><option>13–17 (parent/guardian may be involved)</option><option>18–24</option><option>25–34</option><option>35–44</option><option>45–54</option><option>55+</option></select></div>
+                <div class="field"><label for="mode">Preferred format</label><select id="mode" name="mode"><option>Online / remote</option><option>In-person</option><option>Either</option></select></div>
+                <div class="field full"><label for="message">Briefly tell Javeria what you would like help with</label><textarea id="message" name="message" maxlength="1000" placeholder="Share only what you are comfortable sharing. Avoid highly sensitive or emergency information here."></textarea><div class="hint">Maximum 1,000 characters.</div></div>
+                <div class="field full">
+                  <label class="consent"><input id="consent" type="checkbox" required><span>I understand this is an appointment request, not an emergency service or instant booking.</span></label>
+                  <div class="error" id="consentError"></div>
+                </div>
+              </div>
+              <button class="btn btn-primary" style="width:100%;margin-top:5px" type="submit">Prepare request & continue on WhatsApp ↗</button>
+              <div class="status" id="formStatus" role="status" aria-live="polite"></div>
+            </form>
+
+            <aside class="summary-card" aria-live="polite">
+              <div class="summary-badge">STEP 3 · READY TO SEND</div>
+              <h3 style="margin-top:8px;color:var(--navy)">Your WhatsApp request</h3>
+              <div id="summaryEmpty" class="summary-empty">Your selected areas and form details will appear here. Nothing is sent until you choose to continue to WhatsApp.</div>
+              <ul class="summary-list" id="summaryList" hidden></ul>
+              <div class="summary-actions">
+                <button class="btn btn-secondary" id="copySummary" type="button" disabled>Copy summary</button>
+                <a class="btn btn-wa" id="whatsappDirect" href="#" target="_blank" rel="noopener noreferrer">WhatsApp Javeria ↗</a>
+              </div>
+              <p class="summary-note">WhatsApp is the appointment channel. <a href="https://www.linkedin.com/in/javeria-atif-a07320261?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer">LinkedIn</a> is provided separately for professional credibility.</p>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+<section class="psychologist-focus">
+  <div class="section">
+    <div class="psych-focus-grid">
+      <div class="psych-focus-copy">
+        <span class="section-kicker">A space where you can finally be heard</span>
+        <h2>You do not have to carry everything alone.</h2>
+        <p class="psych-lead">Javeria Atif brings an Applied Psychology and Educational Counseling perspective to conversations with people who may have felt unheard, misunderstood, judged or unable to talk openly about what they have experienced.</p>
+        <p>Whether the concern comes from trauma, a painful experience, emotional distress, anxiety, relationships, academic pressure, family difficulties, life changes or simply feeling overwhelmed, the goal is to create a respectful space where your experience can be listened to seriously and without unnecessary judgement.</p>
+        <div class="psych-pills">
+          <span>Trauma-informed support</span><span>Compassionate listening</span><span>Individualised guidance</span><span>Confidential conversations</span>
+        </div>
+        <a class="btn btn-primary" href="#support">Explore how Javeria can help ↓</a>
+      </div>
+      <div class="psych-visual" aria-label="Psychology and wellbeing visual">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="brain-glow">🧠</div>
+        <div class="floating-card card-one"><b>Be heard.</b><span>Your story matters.</span></div>
+        <div class="floating-card card-two"><b>Be understood.</b><span>No judgement.</span></div>
+        <div class="floating-card card-three"><b>Move forward.</b><span>At your pace.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="therapy-approach">
+  <div class="section">
+    <div class="section-head centered">
+      <span class="section-kicker">How support can be tailored</span>
+      <h2>Support built around the person — not just the problem</h2>
+      <p class="lead">Different people need different forms of support. Javeria can explore a range of counseling and therapy-informed approaches according to the person's concerns, age, goals and circumstances, within her professional scope and appropriate referral pathways.</p>
+    </div>
+    <div class="therapy-cards">
+      <article><span class="therapy-icon">🫶</span><h3>Trauma & difficult experiences</h3><p>A calm, sensitive space to talk about distressing experiences, their emotional impact and healthier ways of coping.</p></article>
+      <article><span class="therapy-icon">🌿</span><h3>Emotional wellbeing</h3><p>Support for anxiety, stress, mood changes, overthinking, confidence and feeling emotionally overwhelmed.</p></article>
+      <article><span class="therapy-icon">🗣️</span><h3>Talk-based support</h3><p>Open, structured conversations that help you understand thoughts, emotions, patterns, relationships and personal goals.</p></article>
+      <article><span class="therapy-icon">🎓</span><h3>Student & academic support</h3><p>Guidance around academic pressure, adjustment, motivation, study stress, educational decisions and transitions.</p></article>
+      <article><span class="therapy-icon">👨‍👩‍👧</span><h3>Child, adolescent & parent guidance</h3><p>Age-appropriate support and guidance for children, adolescents, parents and families facing emotional or educational concerns.</p></article>
+      <article><span class="therapy-icon">🌱</span><h3>Personal growth & life transitions</h3><p>Support for self-understanding, confidence, communication, relationships, major changes and building a healthier direction.</p></article>
+    </div>
+    <div class="therapy-boundary"><strong>Important:</strong> Support is personalised and provided within professional competence. Where a concern requires a specialist, medical, psychiatric or emergency service, appropriate referral is recommended.</div>
+  </div>
+</section>
+
+<section id="experience" class="experience-section">
+  <div class="section">
+    <div class="section-head">
+      <span class="section-kicker">Experience & professional journey</span>
+      <h2>A lifelong connection with psychology, education & people</h2>
+      <p class="lead">Javeria's journey has been shaped by a long-standing personal and professional commitment to understanding people, supporting wellbeing and helping students, children and families navigate meaningful challenges.</p>
+    </div>
+
+    <div class="experience-intro">
+      <div class="experience-highlight">
+        <span class="highlight-icon">🧠</span>
+        <div>
+          <strong>Psychology at the centre of the journey</strong>
+          <p>Psychology is more than a title in Javeria's profile — it has been a lifelong area of learning, observation, empathy and professional development. Her Applied Psychology background is complemented by hands-on experience across counseling, education, student services, teaching and child-focused settings.</p>
+        </div>
+      </div>
+      <div class="experience-stats">
+        <div><b>Applied</b><span>Psychology</span></div>
+        <div><b>Student</b><span>Guidance</span></div>
+        <div><b>Child</b><span>Experience</span></div>
+        <div><b>Education</b><span>Support</span></div>
+      </div>
+    </div>
+
+    <div class="timeline">
+      <article class="timeline-item featured">
+        <div class="timeline-dot">01</div>
+        <div class="timeline-card">
+          <span class="timeline-tag">Current · Professional</span>
+          <h3>Educational Counselor</h3>
+          <p class="timeline-place">The IEIS Group Ltd Pakistan · Rawalpindi</p>
+          <p>Supporting students through educational decisions, student services, adjustment, confidence, academic pressure and future planning while bringing an applied-psychology perspective to individual guidance.</p>
+        </div>
+      </article>
+
+      <article class="timeline-item">
+        <div class="timeline-dot">02</div>
+        <div class="timeline-card">
+          <span class="timeline-tag">Child-focused experience</span>
+          <h3>Child Psychology Experience</h3>
+          <p class="timeline-place">Mind's Professional Therapy Center · Lahore</p>
+          <p>Experience in a child-focused professional environment, developing insight into child wellbeing, communication, emotional needs and age-appropriate support.</p>
+        </div>
+      </article>
+
+      <article class="timeline-item">
+        <div class="timeline-dot">03</div>
+        <div class="timeline-card">
+          <span class="timeline-tag">Education & development</span>
+          <h3>Teaching Professional</h3>
+          <p class="timeline-place">Rosans Islamic School · Lahore</p>
+          <p>Teaching experience strengthened classroom leadership, communication, problem solving and an understanding of the pressures and developmental needs students experience in educational settings.</p>
+        </div>
+      </article>
+
+      <article class="timeline-item">
+        <div class="timeline-dot">04</div>
+        <div class="timeline-card">
+          <span class="timeline-tag">Administration & students</span>
+          <h3>Administrative Officer</h3>
+          <p class="timeline-place">Unique Language School · Lahore</p>
+          <p>Worked in admissions and office administration, gaining practical experience with students, families, educational processes and day-to-day institutional support.</p>
+        </div>
+      </article>
+
+      <article class="timeline-item personal-journey">
+        <div class="timeline-dot">∞</div>
+        <div class="timeline-card">
+          <span class="timeline-tag">Lifelong personal journey</span>
+          <h3>A lifelong perspective on people & psychology</h3>
+          <p>Long before professional roles, Javeria's interest in psychology grew through a sustained curiosity about human behaviour, emotions, relationships, learning and personal development. That lifelong perspective continues to shape a calm, empathetic and person-centred approach to every conversation.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="experience-note">
+      <strong>Professional approach</strong>
+      <span>Warm, respectful, practical and individualised — with clear boundaries and appropriate referral when a concern requires a different level or type of professional care.</span>
+    </div>
+  </div>
+</section>
+<section>
+      <div class="section">
+        <div class="disclaimer"><strong>Important:</strong> This website is for professional appointment requests and general support information. It is not an emergency service, crisis line, medical diagnosis service, or substitute for urgent care. If you or someone else is in immediate danger, contact your local emergency services or an appropriate qualified emergency professional.</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner"><div><strong>Javeria Atif</strong><br><span>Applied Psychology & Educational Counseling</span></div><a href="https://www.linkedin.com/in/javeria-atif-a07320261?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer">View professional LinkedIn profile ↗</a></div>
+  </footer>
+  <button class="backtop" id="backtop" aria-label="Back to top">↑</button>
+
+<script>
+(() => {
+  "use strict";
+  const LINKEDIN = "https://www.linkedin.com/in/javeria-atif-a07320261?utm_source=share_via&utm_content=profile&utm_medium=member_android";
+  // CHANGE THIS NUMBER LATER IN ONE PLACE:
+  const WHATSAPP_NUMBER = "923245346975"; // 03245346975
+  const topics = [
+  ["trauma","Trauma & difficult experiences","Support after distressing or overwhelming experiences.","🧠"],
+  ["mood","Mood changes & emotional ups and downs","Understanding changes in mood, emotions or motivation.","🌦️"],
+  ["anxiety","Anxiety, worry & overthinking","Support with persistent worry, fear, uncertainty or racing thoughts.","💭"],
+  ["stress","Stress & feeling overwhelmed","Managing pressure, overload, demands and emotional exhaustion.","🌿"],
+  ["confidence","Self-confidence & self-esteem","Building confidence, self-worth and a healthier self-image.","✨"],
+  ["academic","Academic pressure & study concerns","Support with academic stress, exams, study habits and performance pressure.","📚"],
+  ["career","Career & education decisions","Guidance around educational choices, career direction and future plans.","🎯"],
+  ["adjustment","Student adjustment & transition","Support with adapting to university, school, a new environment or routine.","🎓"],
+  ["relationships","Relationships & communication","Exploring communication, boundaries, conflict and interpersonal challenges.","🤝"],
+  ["growth","Personal growth & self-understanding","Reflection, personal development, strengths and meaningful goals.","🌱"],
+  ["child","Child & adolescent concerns","Age-appropriate support around emotional, behavioural, school or developmental concerns.","👧"],
+  ["sleep","Sleep, routine & lifestyle concerns","Support with routines, sleep-related difficulties and everyday functioning.","🌙"],
+  ["transitions","Life transitions & major changes","Support through separation, relocation, loss, new roles or other major changes.","🔄"],
+  ["parent","Parent / student guidance","Guidance for parents, students and families around educational or personal concerns.","👨‍👩‍👧"],
+  ["wellbeing","Emotional wellbeing & coping","Developing healthier coping strategies and understanding emotional responses.","💙"],
+  ["custom","Something else","Describe another concern that is not listed above.","➕"]
+];
+
+const selected = new Set();
+const grid = document.getElementById("topicGrid");
+const count = document.getElementById("selectionCount");
+const clear = document.getElementById("clearTopics");
+const customWrap = document.getElementById("customConcernWrap");
+const customInput = document.getElementById("customConcern");
+const form = document.getElementById("appointmentForm");
+const summaryList = document.getElementById("summaryList");
+const summaryEmpty = document.getElementById("summaryEmpty");
+const copyBtn = document.getElementById("copySummary");
+const status = document.getElementById("formStatus");
+let lastSummary = "";
+
+function escapeHtml(v){
+  return String(v).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]));
+}
+function getSelectedNames(){
+  return topics.filter(t=>selected.has(t[0])).map(t=>t[1]);
+}
+function renderTopics(){
+  grid.innerHTML=topics.map(([id,title,desc,icon])=>
+    `<button type="button" class="topic ${selected.has(id)?"selected":""}" data-topic="${id}" aria-pressed="${selected.has(id)}">
+      <span class="topic-icon">${icon}</span><b>${title}</b><span>${desc}</span>
+    </button>`).join("");
+  grid.querySelectorAll(".topic").forEach(btn=>btn.addEventListener("click",()=>{
+    const id=btn.dataset.topic;
+    selected.has(id)?selected.delete(id):selected.add(id);
+    if(id==="custom") customWrap.hidden=!selected.has("custom");
+    updateCount(); updateSummaryPreview();
+    if(id==="custom" && selected.has("custom")) customInput.focus();
+  }));
+}
+function updateCount(){
+  count.textContent=selected.size ? `${selected.size} area${selected.size===1?"":"s"} selected` : "No areas selected yet";
+  clear.disabled=selected.size===0;
+}
+function buildSummary(){
+  const name=document.getElementById("name").value.trim();
+  const contact=document.getElementById("contact").value.trim();
+  const age=document.getElementById("age").value||"Not specified";
+  const mode=document.getElementById("mode").value;
+  const message=document.getElementById("message").value.trim()||"No additional details provided.";
+  const areas=getSelectedNames();
+  const custom=customInput.value.trim();
+  return [
+    "APPOINTMENT REQUEST — JAVERIA ATIF",
+    "",
+    "Areas of concern: "+(areas.join(", ")||"Not selected"),
+    ...(custom ? ["Additional concern: "+custom] : []),
+    "Name: "+(name||"Not entered"),
+    "Preferred contact: "+(contact||"Not entered"),
+    "Age group: "+age,
+    "Preferred format: "+mode,
+    "Additional message: "+message
+  ].join("\n");
+}
+function updateSummaryPreview(){
+  const areas=getSelectedNames();
+  const custom=customInput.value.trim();
+  const rows=[
+    ["Areas",areas.join(", ")||"Not selected"],
+    ...(custom?[["Additional concern",custom]]:[]),
+    ["Name",document.getElementById("name").value.trim()||"Not entered"],
+    ["Contact",document.getElementById("contact").value.trim()||"Not entered"],
+    ["Format",document.getElementById("mode").value]
+  ];
+  summaryList.innerHTML=rows.map(r=>`<li><strong>${escapeHtml(r[0])}:</strong> ${escapeHtml(r[1])}</li>`).join("");
+  summaryList.hidden=false;
+  summaryEmpty.hidden=true;
+}
+function err(id,msg){document.getElementById(id).textContent=msg;}
+function validate(){
+  let ok=true;
+  const name=document.getElementById("name").value.trim();
+  const contact=document.getElementById("contact").value.trim();
+  const consent=document.getElementById("consent").checked;
+  err("nameError",name.length<2?"Please enter your name.":"");
+  err("contactError",contact.length<3?"Please enter a contact method.":"");
+  err("consentError",!consent?"Please confirm the appointment-request notice.":"");
+  if(name.length<2||contact.length<3||!consent) ok=false;
+  if(selected.size===0){
+    status.textContent="Please select at least one area of concern.";
+    status.className="status show bad";
+    grid.scrollIntoView({behavior:"smooth",block:"center"});
+    ok=false;
+  }
+  if(selected.has("custom")&&!customInput.value.trim()){
+    status.textContent='Please describe your concern in the "Something else" box.';
+    status.className="status show bad";
+    customWrap.hidden=false; customInput.focus(); ok=false;
+  }
+  return ok;
+}
+document.querySelectorAll("#appointmentForm input,#appointmentForm textarea,#appointmentForm select").forEach(el=>el.addEventListener("input",updateSummaryPreview));
+form.addEventListener("submit",e=>{
+  e.preventDefault();
+  if(!validate()) return;
+  lastSummary=buildSummary();
+  summaryList.hidden=false; summaryEmpty.hidden=true; copyBtn.disabled=false;
+  updateSummaryPreview();
+  let copied=false;
+  try{
+    if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(lastSummary);copied=true;}
+  }catch(_){}
+  status.textContent=copied?"Request summary copied. WhatsApp will open next.":"Your request is ready. WhatsApp will open next.";
+  status.className="status show";
+  const waText="Hello Javeria, I would like to request an appointment.\n\n"+lastSummary;
+  const waUrl="https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(waText);
+  window.open(waUrl,"_blank","noopener,noreferrer");
+});
+copyBtn.addEventListener("click",async()=>{
+  lastSummary=buildSummary();
+  try{
+    await navigator.clipboard.writeText(lastSummary);
+    status.textContent="Summary copied to clipboard.";
+    status.className="status show";
+  }catch(_){
+    status.textContent="Copy was blocked by the browser. You can copy the summary from this section manually.";
+    status.className="status show bad";
+  }
+});
+clear.addEventListener("click",()=>{
+  selected.clear(); customInput.value=""; customWrap.hidden=true;
+  renderTopics(); updateCount(); updateSummaryPreview();
+});
+document.getElementById("whatsappDirect").href="https://wa.me/"+WHATSAPP_NUMBER;
+renderTopics(); updateCount(); updateSummaryPreview();
+
+})();
+</script>
+</body>
+</html>
