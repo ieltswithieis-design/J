@@ -1,958 +1,495 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Professional appointment request page for Javeria Atif, Applied Psychology and Educational Counseling. Select areas of support, prepare your request, and continue via WhatsApp. LinkedIn is provided separately for professional credibility.">
-  <meta name="theme-color" content="#082f49">
-  <title>Javeria Atif | Applied Psychology & Educational Counseling</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <style>/* =========================================================
-   HUMRAAZ LOGO — REPLACES JA
-   ========================================================= */
-
-.brand-mark.brand-logo {
-    width: 72px;
-    height: 72px;
-    flex: 0 0 72px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    padding: 0;
-    margin: 0;
-
-    overflow: hidden;
-    border-radius: 16px;
-
-    background: #ffffff;
-
-    border: 1px solid rgba(76, 48, 102, 0.12);
-
-    box-shadow:
-        0 8px 22px rgba(76, 48, 102, 0.12);
-
-    box-sizing: border-box;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Humraz — a calm, confidential space for support, wellbeing, learning and connection.">
+<meta name="theme-color" content="#4B2E83">
+<title>Humraz — A safe space to be heard</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
+:root{--p:#4B2E83;--p2:#35205f;--rose:#D39BA9;--blush:#F6E3E8;--cream:#FFF9F6;--ink:#29262D;--muted:#706A74;--line:#E9E1E8;--white:#fff;--shadow:0 20px 55px rgba(75,46,131,.11);--r:22px;--max:1200px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:#fff;font-family:"DM Sans",sans-serif;line-height:1.6}a{text-decoration:none;color:inherit}button,input,textarea,select{font:inherit}button{cursor:pointer}
+.container{max-width:var(--max);margin:auto;padding:0 24px}.top{background:var(--p2);color:#fff;text-align:center;font-size:13px;padding:9px}.top a{text-decoration:underline}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:11px;font-family:"Playfair Display",serif;font-size:29px;color:var(--p)}.mark{width:38px;height:38px;border-radius:50% 50% 50% 8px;background:var(--p);display:grid;place-items:center;color:#fff;font-family:"Plus Jakarta Sans";font-size:17px;transform:rotate(-4deg)}
+nav{display:flex;gap:25px;align-items:center}nav a{font-size:14px;font-weight:600;color:#4d4851}nav a:hover{color:var(--p)}nav a.quick-link{color:var(--p)}
+.btn{border:0;border-radius:999px;padding:12px 19px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;gap:8px;transition:.2s}.btn:hover{transform:translateY(-2px)}.primary{background:var(--p);color:#fff;box-shadow:0 10px 25px rgba(75,46,131,.18)}.soft{background:var(--blush);color:var(--p)}.outline{background:#fff;color:var(--p);border:1px solid #d9cce1}
+.menu{display:none;background:none;border:0;font-size:27px;color:var(--p)}
+.hero{background:linear-gradient(135deg,var(--cream),#fff 56%,#f4e9f1);padding:90px 0 75px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:65px;align-items:center}.eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:800;color:var(--p);margin-bottom:16px}.hero h1{font:700 clamp(48px,6vw,78px)/1.02 "Playfair Display",serif;letter-spacing:-2px;margin:0 0 22px;color:#33263d}.hero h1 em{color:var(--p);font-style:normal}.hero p{font-size:18px;color:var(--muted);max-width:610px;margin:0 0 30px}.actions{display:flex;gap:12px;flex-wrap:wrap}.hero-art{min-height:410px;position:relative}.orb{position:absolute;width:310px;height:310px;border-radius:50%;background:var(--lav);right:30px;top:15px}.card-float{position:absolute;background:#fff;border:1px solid rgba(75,46,131,.08);box-shadow:var(--shadow);border-radius:24px;padding:24px}.quote{left:0;bottom:35px;width:285px}.quote b{font:600 23px "Playfair Display";display:block;margin-bottom:10px}.heart{right:0;top:45px;width:230px}.heart-icon{font-size:38px}.mini{font-size:12px;color:var(--muted)}.spark{position:absolute;right:180px;bottom:0;color:var(--rose);font-size:50px}
+section{padding:88px 0}.section-head{max-width:700px;margin-bottom:38px}.section-head h2{font:600 45px/1.12 "Playfair Display",serif;margin:8px 0 13px}.section-head p{color:var(--muted);font-size:17px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.tile{border:1px solid var(--line);border-radius:var(--r);padding:27px;background:#fff;transition:.25s}.tile:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:#d9cbe2}.tile .icon{font-size:30px;margin-bottom:15px}.tile h3{margin:0 0 8px;font-size:18px}.tile p{margin:0;color:var(--muted);font-size:14px}.tinted{background:var(--cream)}
+.story{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:center}.story-box{background:var(--p);color:#fff;border-radius:34px;padding:48px;min-height:410px;display:flex;flex-direction:column;justify-content:end}.story-box span{opacity:.7;text-transform:uppercase;font-size:12px;letter-spacing:.15em}.story-box strong{font:600 45px/1.08 "Playfair Display";margin-top:15px}.story-text p{color:var(--muted);font-size:16px}.check{display:flex;gap:11px;margin:15px 0;font-weight:600}.check i{color:var(--p);font-style:normal}
+.support-card{background:linear-gradient(145deg,#fff,#fbf6fa);border-radius:26px;padding:29px;border:1px solid var(--line);min-height:205px}.support-card h3{font:600 25px "Playfair Display";margin:10px 0}.support-card a{color:var(--p);font-weight:700;font-size:14px}
+.banner{background:var(--p2);color:#fff;border-radius:34px;padding:50px;display:flex;align-items:center;justify-content:space-between;gap:30px}.banner h2{font:600 42px "Playfair Display";margin:0 0 8px}.banner p{opacity:.75;margin:0;max-width:650px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0}.step{padding:25px;border-top:1px solid var(--line)}.step b{display:block;color:var(--p);font-size:12px;letter-spacing:.1em;text-transform:uppercase}.step h3{margin:9px 0 6px}.step p{color:var(--muted);font-size:14px}
+.cta{background:var(--blush)}.cta-inner{text-align:center;max-width:760px;margin:auto}.cta h2{font:600 48px "Playfair Display";margin:0 0 12px}.cta p{color:var(--muted);margin:0 auto 25px}
+footer{background:#241b2d;color:#fff;padding:55px 0 25px}.footgrid{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:35px}.footbrand{font:600 31px "Playfair Display"}.footgrid h4{margin:0 0 13px;font-size:14px}.footgrid a,.footgrid p{display:block;color:#c8bfce;font-size:13px;margin:7px 0}.copy{border-top:1px solid #43364b;margin-top:35px;padding-top:20px;color:#a99fac;font-size:12px;display:flex;justify-content:space-between;gap:20px}
+/* === Compact support modal === */
+.modal{
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(25,15,30,.58);
+  z-index:50;
+  align-items:center;
+  justify-content:center;
+  padding:14px;
 }
 
-.brand-mark.brand-logo img {
-    width: 100%;
-    height: 100%;
-
-    display: block;
-
-    object-fit: contain;
-
-    /* DO NOT alter the supplied logo */
-    filter: none;
-    transform: none;
+.modal.show{
+  display:flex;
 }
 
-/* Keep Javeria's name perfectly aligned with the logo */
-
-.brand {
-    display: flex;
-    align-items: center;
-    gap: 13px;
-}
-
-/* Professional subtitle */
-
-.brand > span:last-child {
-    line-height: 1.2;
-}
-
-.brand > span:last-child small {
-    display: block;
-    margin-top: 5px;
-
-    font-size: 0.72rem;
-    letter-spacing: 0.11em;
-    text-transform: uppercase;
-
-    color: #60788a;
-}
-
-/* =========================================================
-   MOBILE
-   ========================================================= */
-
-@media (max-width: 700px) {
-
-    .brand {
-        gap: 9px;
-    }
-
-    .brand-mark.brand-logo {
-        width: 58px;
-        height: 58px;
-        flex-basis: 58px;
-        border-radius: 13px;
-    }
-
-    .brand > span:last-child {
-        font-size: 0.92rem;
-    }
-
-    .brand > span:last-child small {
-        font-size: 0.55rem;
-        letter-spacing: 0.07em;
-    }
-}
-
-    :root{
-      --navy:#082f49; --navy2:#0f4c5c; --teal:#0f766e; --teal2:#14b8a6;
-      --coral:#f97316; --purple:#7c3aed; --blue:#2563eb; --green:#16a34a;
-      --ink:#102a43; --muted:#5b7083; --paper:#f8fbfc; --white:#fff;
-      --line:#dce7ec; --shadow:0 18px 50px rgba(8,47,73,.12);
-      --radius:22px;
-    }
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",system-ui,sans-serif;line-height:1.6}
-    a{color:inherit}
-    button,input,textarea{font:inherit}
-    .topbar{background:linear-gradient(90deg,var(--navy),var(--navy2));color:#dff8f5;font-size:.9rem}
-    .topbar-inner{max-width:1180px;margin:auto;padding:9px 22px;display:flex;justify-content:space-between;gap:18px;align-items:center}
-    .topbar strong{color:#fff}
-    header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(220,231,236,.85)}
-    .nav{max-width:1180px;margin:auto;padding:15px 22px;display:flex;align-items:center;justify-content:space-between}
-    .brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-weight:800;color:var(--navy)}
-    .brand-mark{width:42px;height:42px;border-radius:13px;display:grid;place-items:center;color:white;background:linear-gradient(135deg,var(--teal),var(--blue));box-shadow:0 8px 22px rgba(15,118,110,.24);font-weight:800}
-    .brand small{display:block;color:var(--muted);font-weight:600;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase}
-    .nav-links{display:flex;align-items:center;gap:25px}
-    .nav-links a{text-decoration:none;font-weight:600;color:#365064}
-    .nav-links a:hover{color:var(--teal)}
-    .nav-cta{padding:11px 16px!important;border-radius:12px;background:var(--navy);color:white!important}
-    .hamb{display:none;border:0;background:transparent;font-size:1.7rem;color:var(--navy);cursor:pointer}
-    .hero{position:relative;overflow:hidden;background:linear-gradient(135deg,#eefbf9 0%,#f8fbff 52%,#fff4ed 100%)}
-    .hero:before,.hero:after{content:"";position:absolute;border-radius:50%;filter:blur(1px);opacity:.45}
-    .hero:before{width:300px;height:300px;background:#99f6e4;right:-120px;top:-100px}
-    .hero:after{width:230px;height:230px;background:#fed7aa;left:-120px;bottom:-120px}
-    .hero-grid{max-width:1180px;margin:auto;padding:72px 22px 76px;display:grid;grid-template-columns:1.15fr .85fr;gap:45px;align-items:center;position:relative;z-index:1}
-    .eyebrow{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;background:#dff7f3;color:var(--teal);font-weight:800;font-size:.82rem;text-transform:uppercase;letter-spacing:.07em}
-    h1,h2,h3{line-height:1.15}
-    h1{font-family:"Playfair Display",serif;font-size:clamp(2.6rem,5vw,4.65rem);margin:18px 0 18px;color:var(--navy);letter-spacing:-.03em}
-    .hero-copy{font-size:1.12rem;max-width:670px;color:#486276}
-    .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin:27px 0}
-    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 18px;border-radius:13px;text-decoration:none;font-weight:800;border:1px solid transparent;cursor:pointer;transition:.2s transform,.2s box-shadow,.2s background}
-    .btn:hover{transform:translateY(-2px)}
-    .btn-primary{background:var(--navy);color:#fff;box-shadow:0 10px 24px rgba(8,47,73,.2)}
-    .btn-secondary{background:#fff;color:var(--navy);border-color:#cbdbe2}
-    .trust-row{display:flex;flex-wrap:wrap;gap:9px;color:#516879;font-size:.88rem;font-weight:600}
-    .trust-row span{padding:6px 9px;background:rgba(255,255,255,.72);border:1px solid #dce7ec;border-radius:999px}
-    .portrait-card{background:#fff;border:1px solid #d9e7ec;border-radius:32px;padding:15px;box-shadow:var(--shadow);transform:rotate(1deg)}
-    .portrait-card img{width:100%;display:block;border-radius:25px;aspect-ratio:1/1;object-fit:cover}
-    .portrait-caption{display:flex;justify-content:space-between;gap:15px;padding:15px 6px 4px;align-items:center}
-    .portrait-caption strong{font-size:1.05rem}.portrait-caption span{color:var(--muted);font-size:.84rem}
-    section{scroll-margin-top:90px}
-    .section{max-width:1180px;margin:auto;padding:78px 22px}
-    .section-head{max-width:760px;margin-bottom:35px}
-    .section-kicker{color:var(--teal);font-weight:800;text-transform:uppercase;letter-spacing:.1em;font-size:.8rem}
-    h2{font-family:"Playfair Display",serif;font-size:clamp(2rem,4vw,3.2rem);color:var(--navy);margin:9px 0 12px}
-    .lead{color:var(--muted);font-size:1.05rem}
-    .feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-    .feature{padding:25px;border:1px solid var(--line);border-radius:var(--radius);background:#fff;transition:.22s;box-shadow:0 6px 22px rgba(8,47,73,.05)}
-    .feature:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
-    .icon{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;font-size:1.35rem;margin-bottom:14px}
-    .i-teal{background:#dff7f3}.i-purple{background:#ede9fe}.i-orange{background:#ffedd5}.i-blue{background:#dbeafe}.i-green{background:#dcfce7}.i-coral{background:#ffe4e6}
-    .feature h3{margin:0 0 7px;color:var(--navy)}.feature p{margin:0;color:var(--muted)}
-    .contact-strip{margin-top:24px;padding:20px 22px;border:1px solid #cfe1e7;border-radius:20px;background:linear-gradient(135deg,#ffffff,#f1fbfa);display:flex;align-items:center;justify-content:space-between;gap:18px}
-    .contact-strip strong{display:block;color:var(--navy);font-size:1.05rem}.contact-strip span{display:block;color:var(--muted);font-size:.88rem;margin-top:2px}
-    .contact-actions{display:flex;gap:9px;flex-wrap:wrap}.btn-wa{background:#16a34a;color:#fff;box-shadow:0 9px 20px rgba(22,163,74,.18)}
-    .appointment-hub{background:linear-gradient(180deg,#eef8f8 0%,#f8fbfc 100%);border-top:1px solid #dbe9ed;border-bottom:1px solid #dbe9ed}
-    .appointment-flow{background:#fff;border:1px solid var(--line);border-radius:28px;padding:26px;box-shadow:var(--shadow)}
-    .flow-step{display:flex;align-items:center;gap:13px;margin:2px 0 18px}
-    .step-number{flex:0 0 38px;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--navy);color:#fff;font-weight:900}
-    .flow-step strong{display:block;color:var(--navy);font-size:1rem}.flow-step span{display:block;color:var(--muted);font-size:.84rem}
-    .form-step{margin-top:28px;padding-top:25px;border-top:1px solid #e2edf1}
-    .appointment-hub .support-grid{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:10px}
-    .appointment-hub .topic{display:block!important;visibility:visible!important;opacity:1!important;width:100%;min-height:112px}
-
-    .appointment-hub .support-grid{margin-top:8px}
-    .appointment-hub .topic-icon{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:9px;background:#e7f5f4;margin-bottom:8px;font-size:1rem}
-    .custom-concern{margin-top:14px;padding:16px;border:1px solid #9bd8d2;border-radius:16px;background:#f0fbfa}
-    .custom-concern label{display:block;color:var(--navy);font-weight:800;margin-bottom:8px}
-    .custom-concern label span{font-weight:500;color:var(--muted);font-size:.82rem}
-    .custom-concern textarea{width:100%;min-height:100px;border:1px solid #cbdde3;border-radius:12px;padding:12px 14px;resize:vertical;background:#fff;color:var(--ink);font:inherit}
-    .appointment-hub .topic{border:1px solid #d5e3e8;background:#f8fbfc;color:var(--ink);border-radius:16px;padding:16px;text-align:left;cursor:pointer;min-height:86px;transition:.18s;position:relative}
-    .appointment-hub .topic:hover{background:#eefaf8;transform:translateY(-2px);border-color:#a9ddd7}
-    .appointment-hub .topic.selected{background:#dff7f3;color:var(--navy);border-color:#72d8ce;box-shadow:0 8px 24px rgba(20,184,166,.16)}
-    .appointment-hub .topic.selected:after{content:"✓";position:absolute;right:11px;top:9px;font-weight:900;color:var(--teal)}
-    .appointment-hub .topic b{display:block;font-size:.98rem;margin-bottom:3px}.appointment-hub .topic span{font-size:.78rem;color:var(--muted)}
-    .light-selection{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-top:14px;padding:13px 15px;border:1px solid #dce8ec;border-radius:14px;background:#f7fafb}
-    .light-selection span{color:var(--muted);font-size:.88rem;font-weight:700}
-    .light-clear{background:#fff;border:1px solid #cbdbe2;color:var(--navy);padding:8px 12px;border-radius:10px;cursor:pointer;font-weight:700}
-    .summary-badge{display:inline-block;padding:5px 9px;border-radius:999px;background:#e0f2fe;color:#075985;font-size:.72rem;font-weight:900;letter-spacing:.06em}
-    .summary-note{font-size:.78rem;color:var(--muted);margin:13px 0 0}.summary-note a{color:var(--teal);font-weight:800}
-    .support-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-    .topic{border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.06);color:#edf8fb;border-radius:16px;padding:16px;text-align:left;cursor:pointer;min-height:86px;transition:.18s;position:relative}
-    .topic:hover{background:rgba(255,255,255,.11);transform:translateY(-2px)}
-    .topic.selected{background:#dff7f3;color:var(--navy);border-color:#8ce8dd;box-shadow:0 8px 24px rgba(20,184,166,.2)}
-    .topic.selected:after{content:"✓";position:absolute;right:11px;top:9px;font-weight:900;color:var(--teal)}
-    .topic b{display:block;font-size:.98rem;margin-bottom:3px}.topic span{font-size:.78rem;opacity:.8}
-    .selection-bar{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-top:20px;padding:15px;border:1px solid rgba(255,255,255,.15);border-radius:16px;background:rgba(255,255,255,.05)}
-    .selection-bar span{color:#c8dce6;font-size:.9rem}.clear{background:transparent;border:1px solid rgba(255,255,255,.35);color:#fff;padding:8px 12px;border-radius:10px;cursor:pointer;font-weight:700}
-    .form-section{background:#f0f8fa}
-    .form-grid{display:grid;grid-template-columns:1fr .72fr;gap:25px;align-items:start}
-    .form-card,.summary-card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:28px;box-shadow:0 10px 30px rgba(8,47,73,.07)}
-    .fields{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field.full{grid-column:1/-1}
-    label{display:block;font-weight:800;color:var(--navy);font-size:.9rem;margin-bottom:7px}
-    input,textarea,select{width:100%;border:1px solid #cbdbe2;border-radius:12px;padding:12px 13px;background:#fff;color:var(--ink);outline:none;transition:.18s}
-    input:focus,textarea:focus,select:focus{border-color:var(--teal2);box-shadow:0 0 0 4px rgba(20,184,166,.1)}
-    textarea{min-height:125px;resize:vertical}.hint{font-size:.78rem;color:var(--muted);margin-top:5px}
-    .error{color:#b91c1c;font-size:.78rem;min-height:18px;margin-top:4px}
-    .consent{display:flex;gap:9px;align-items:flex-start;font-size:.8rem;color:var(--muted);margin:10px 0}.consent input{width:auto;margin-top:4px}
-    .summary-card{position:sticky;top:105px}.summary-empty{color:var(--muted);padding:10px 0}
-    .summary-list{padding:0;margin:0;list-style:none}.summary-list li{padding:9px 0;border-bottom:1px solid #e7eef2;font-size:.9rem}.summary-list li strong{color:var(--navy)}
-    .summary-actions{display:grid;gap:10px;margin-top:17px}
-    .status{margin-top:13px;padding:11px 12px;border-radius:11px;background:#ecfdf5;color:#166534;font-size:.85rem;display:none}
-    .status.show{display:block}.status.bad{background:#fff1f2;color:#9f1239}
-    .timeline{position:relative;margin-top:25px}.timeline:before{content:"";position:absolute;left:12px;top:0;bottom:0;width:2px;background:#cfe3e9}
-    .timeline-item{position:relative;padding:0 0 30px 44px}.dot{position:absolute;left:4px;top:4px;width:18px;height:18px;border:4px solid #fff;background:var(--teal2);border-radius:50%;box-shadow:0 0 0 2px #a8e9e2}
-    .date{font-weight:800;color:var(--coral);font-size:.82rem}.timeline h3{margin:3px 0;color:var(--navy)}.timeline p{margin:0;color:var(--muted)}
-    .edu-card{background:linear-gradient(135deg,#fff,#f3f8fb);border:1px solid var(--line);padding:25px;border-radius:22px}
-    .edu-card h3{margin:0;color:var(--navy)}.grade{display:inline-block;margin-top:10px;padding:6px 10px;border-radius:999px;background:#dcfce7;color:#166534;font-weight:800;font-size:.8rem}
-    .disclaimer{background:#fff7ed;border:1px solid #fed7aa;border-left:5px solid var(--coral);padding:18px 20px;border-radius:14px;color:#7c2d12}
-    footer{background:#061f31;color:#d7e6ed}.footer-inner{max-width:1180px;margin:auto;padding:40px 22px;display:flex;justify-content:space-between;gap:25px;align-items:center}.footer-inner strong{color:#fff}.footer-inner a{color:#8ee8de;font-weight:800;text-decoration:none}
-    .backtop{position:fixed;right:18px;bottom:18px;width:45px;height:45px;border-radius:50%;border:1px solid #cbdbe2;background:#fff;color:var(--navy);box-shadow:var(--shadow);cursor:pointer;display:none}
-    .backtop.show{display:block}
-    @media(max-width:900px){
-      .hero-grid,.form-grid{grid-template-columns:1fr}.portrait-card{max-width:520px;margin:auto}.feature-grid{grid-template-columns:1fr 1fr}.support-grid{grid-template-columns:1fr 1fr}.appointment-hub .support-grid{grid-template-columns:1fr 1fr}.summary-card{position:static}
-    }
-    @media(max-width:700px){
-      .contact-strip{align-items:flex-start;flex-direction:column}.contact-actions{width:100%}.contact-actions .btn{flex:1}.appointment-flow{padding:18px}.light-selection{align-items:flex-start;flex-direction:column}
-      .topbar-inner{font-size:.75rem}.topbar-inner span:last-child{display:none}
-      .hamb{display:block}.nav-links{display:none;position:absolute;left:12px;right:12px;top:74px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:10px;box-shadow:var(--shadow);flex-direction:column;align-items:stretch}.nav-links.open{display:flex}.nav-links a{padding:11px 12px}.nav-cta{text-align:center}
-      .hero-grid{padding-top:50px}.hero-copy{font-size:1rem}.section{padding:58px 18px}.feature-grid,.support-grid,.fields,.appointment-hub .support-grid{grid-template-columns:1fr}.field.full{grid-column:auto}
-      .selection-bar{align-items:flex-start;flex-direction:column}.form-card,.summary-card{padding:20px}.footer-inner{flex-direction:column;align-items:flex-start}
-    }
-    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
-  .hero-logo-lockup{display:inline-flex;background:#fff;padding:8px;border-radius:15px;box-shadow:0 12px 35px rgba(0,0,0,.16);margin-bottom:10px}
-.hero-logo-lockup img{width:150px;height:150px;display:block;object-fit:contain}
-@media(max-width:560px){.hero-logo-lockup img{width:120px;height:120px}}
-</style>
-
-<style id="experience-enhancement">
-.experience-section{
+.dialog{
+  background:#fff;
+  border-radius:24px;
+  max-width:500px;
+  width:100%;
+  max-height:calc(100vh - 28px);
+  padding:24px;
   position:relative;
-  overflow:hidden;
-  background:
-    radial-gradient(circle at 8% 12%,rgba(20,184,166,.16),transparent 28%),
-    radial-gradient(circle at 92% 25%,rgba(124,58,237,.13),transparent 28%),
-    linear-gradient(180deg,#f7fbfc 0%,#eef7f8 100%);
+  overflow-y:auto;
+  box-shadow:0 25px 80px rgba(25,15,30,.25);
 }
-.experience-section:before{
-  content:"";
-  position:absolute;inset:0;pointer-events:none;
-  background-image:linear-gradient(rgba(8,47,73,.035) 1px,transparent 1px),
-                   linear-gradient(90deg,rgba(8,47,73,.035) 1px,transparent 1px);
-  background-size:38px 38px;
+
+.close{
+  position:absolute;
+  right:14px;
+  top:9px;
+  width:34px;
+  height:34px;
+  border:0;
+  background:transparent;
+  font-size:25px;
+  line-height:1;
+  color:var(--muted);
 }
-.experience-section .section{position:relative;z-index:1}
-.experience-intro{
-  display:grid;grid-template-columns:1.7fr .9fr;gap:20px;align-items:stretch;margin:26px 0 34px;
+
+.dialog h2{
+  font:600 28px/1.15 "Playfair Display";
+  margin:0 35px 5px 0;
 }
-.experience-highlight{
-  display:flex;gap:18px;align-items:flex-start;padding:26px 28px;border-radius:24px;
-  background:linear-gradient(135deg,#082f49,#0f766e);
-  color:#fff;box-shadow:0 22px 55px rgba(8,47,73,.18);position:relative;overflow:hidden;
+
+.dialog p{
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.5;
+  margin:0 0 12px;
 }
-.experience-highlight:after{
-  content:"";position:absolute;width:190px;height:190px;border-radius:50%;
-  border:35px solid rgba(255,255,255,.08);right:-65px;top:-65px;
+
+.form{
+  display:grid;
+  gap:8px;
 }
-.highlight-icon{
-  width:58px;height:58px;display:grid;place-items:center;border-radius:17px;
-  background:rgba(255,255,255,.15);font-size:1.65rem;flex:0 0 58px;
+
+.form label{
+  font-size:11px;
+  font-weight:700;
+  line-height:1.2;
+  margin-top:2px;
 }
-.experience-highlight strong{font-size:1.12rem;display:block;margin-bottom:7px}
-.experience-highlight p{margin:0;color:#d9f4f0;line-height:1.7}
-.experience-stats{
-  display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:12px;
-  background:#fff;border:1px solid #d8e8ec;border-radius:24px;box-shadow:0 15px 40px rgba(8,47,73,.08);
+
+.form input,
+.form textarea,
+.form select{
+  width:100%;
+  padding:10px 12px;
+  min-height:42px;
+  border:1px solid var(--line);
+  border-radius:11px;
+  outline:none;
+  font-size:14px;
 }
-.experience-stats div{
-  border-radius:18px;padding:18px;background:linear-gradient(145deg,#fff,#f1f9f9);
-  border:1px solid #e0edef;display:flex;flex-direction:column;justify-content:center;
+
+.form textarea{
+  min-height:92px;
+  resize:vertical;
 }
-.experience-stats b{font-size:1.05rem;color:#082f49}.experience-stats span{color:#5b7180;font-size:.8rem;margin-top:3px}
-.timeline{position:relative;max-width:1000px;margin:0 auto;padding:8px 0 10px}
-.timeline:before{
-  content:"";position:absolute;left:25px;top:15px;bottom:15px;width:3px;
-  background:linear-gradient(#14b8a6,#7c3aed,#f97316,#2563eb);
-  border-radius:10px;
+
+.form input:focus,
+.form textarea:focus,
+.form select:focus{
+  border-color:var(--p);
+  box-shadow:0 0 0 3px #eee7f5;
 }
-.timeline-item{position:relative;padding-left:70px;margin:0 0 18px}
-.timeline-dot{
-  position:absolute;left:0;top:10px;width:52px;height:52px;border-radius:17px;
-  display:grid;place-items:center;background:#fff;border:3px solid #14b8a6;
-  color:#082f49;font-weight:900;box-shadow:0 9px 24px rgba(8,47,73,.13);z-index:2;
+
+.form .btn{
+  min-height:44px;
+  margin-top:4px;
 }
-.timeline-item:nth-child(2) .timeline-dot{border-color:#7c3aed}
-.timeline-item:nth-child(3) .timeline-dot{border-color:#f97316}
-.timeline-item:nth-child(4) .timeline-dot{border-color:#2563eb}
-.timeline-item:nth-child(5) .timeline-dot{border-color:#0f766e;font-size:1.35rem}
-.timeline-card{
-  background:rgba(255,255,255,.94);border:1px solid #d9e7eb;border-radius:22px;
-  padding:23px 25px;box-shadow:0 12px 32px rgba(8,47,73,.07);
-  transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease;
-}
-.timeline-card:hover{transform:translateY(-4px);box-shadow:0 20px 44px rgba(8,47,73,.13);border-color:#9bd8d2}
-.timeline-item.featured .timeline-card{border:2px solid #8bd8d1;box-shadow:0 18px 45px rgba(20,184,166,.13)}
-.timeline-tag{
-  display:inline-flex;padding:6px 10px;border-radius:999px;background:#e7f8f6;color:#0f766e;
-  font-size:.72rem;font-weight:900;text-transform:uppercase;letter-spacing:.04em;margin-bottom:8px;
-}
-.timeline-card h3{margin:0;color:#082f49;font-size:1.18rem}.timeline-place{font-weight:800;color:#516b79;margin:5px 0 9px}
-.timeline-card p:not(.timeline-place){color:#5b7180;line-height:1.65;margin:0}
-.experience-note{
-  margin:30px auto 0;max-width:1000px;display:flex;gap:12px;align-items:center;padding:17px 20px;
-  border-left:5px solid #f97316;background:#fff7ed;border-radius:14px;color:#6b4a2c;
-}
-.experience-note strong{color:#9a4b09;white-space:nowrap}.experience-note span{line-height:1.5}
-@media(max-width:800px){
-  .experience-intro{grid-template-columns:1fr}.experience-highlight{padding:22px}.experience-stats{min-height:160px}
-  .timeline:before{left:20px}.timeline-item{padding-left:58px}.timeline-dot{width:42px;height:42px;border-radius:14px}
-  .timeline-card{padding:19px}.experience-note{align-items:flex-start;flex-direction:column}
-}
+
+.notice{
+  background:#f7f3fa;
+  border-radius:11px;
+  padding:9px 11px;
+  font-size:11px;
+  line-height:1.45;
+  color:var(--muted);
+}.dialog h2{font:600 31px "Playfair Display";margin:0 0 7px}.dialog p{color:var(--muted);font-size:14px}.form{display:grid;gap:12px}.form label{font-size:12px;font-weight:700}.form input,.form textarea,.form select{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:12px;outline:none}.form input:focus,.form textarea:focus,.form select:focus{border-color:var(--p);box-shadow:0 0 0 3px #eee7f5}.notice{background:#f7f3fa;border-radius:12px;padding:12px;font-size:12px;color:var(--muted)}
+@media(max-width:900px){nav{display:none}.menu{display:block}.hero-grid,.story{grid-template-columns:1fr}.hero{padding-top:60px}.hero-art{min-height:350px}.grid4{grid-template-columns:repeat(2,1fr)}.grid3,.steps{grid-template-columns:1fr}.banner{display:block}.banner .btn{margin-top:20px}.footgrid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.container{padding:0 17px}.nav{height:68px}.hero h1{font-size:48px}.hero-art{transform:scale(.9);transform-origin:center}.grid4{grid-template-columns:1fr}.story-box{padding:30px;min-height:330px}.story-box strong{font-size:35px}.banner{padding:30px}.banner h2,.cta h2{font-size:35px}.copy{display:block}.copy span{display:block;margin-top:7px}}
+
+.world{background:#fff}.people-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.person{overflow:hidden;border:1px solid var(--line);border-radius:22px;background:#fff;box-shadow:0 10px 30px rgba(75,46,131,.06)}
+.person img{width:100%;height:205px;object-fit:cover;display:block}.person-body{padding:18px}.person-body b{display:block}.person-body small{color:var(--muted)}
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.review{border:1px solid var(--line);border-radius:22px;padding:25px;background:#fff}.stars{letter-spacing:2px;color:#b98224;margin-bottom:10px}.review p{font-family:"Playfair Display",serif;font-size:19px;line-height:1.45;margin:0 0 14px}.review small{color:var(--muted)}
+.disclaimer{font-size:12px;color:var(--muted);margin-top:18px}
+@media(max-width:900px){.people-grid,.reviews{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.people-grid,.reviews{grid-template-columns:1fr}}
+
+/* === Humraz premium interaction layer === */
+body{overflow-x:hidden}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .75s ease,transform .75s cubic-bezier(.2,.7,.2,1)}
+.reveal.visible{opacity:1;transform:none}
+.parallax-orb{animation:floatOrb 8s ease-in-out infinite}
+@keyframes floatOrb{0%,100%{transform:translate3d(0,0,0) scale(1)}50%{transform:translate3d(12px,-18px,0) scale(1.04)}}
+@keyframes pulseSoft{0%,100%{box-shadow:0 0 0 0 rgba(75,46,131,.16)}50%{box-shadow:0 0 0 16px rgba(75,46,131,0)}}
+.mark{animation:pulseSoft 3s ease-in-out infinite}
+.hero-art:before,.hero-art:after{content:"";position:absolute;border:1px solid rgba(75,46,131,.12);border-radius:50%;pointer-events:none}
+.hero-art:before{width:370px;height:370px;right:0;top:-15px;animation:spinSlow 24s linear infinite}
+.hero-art:after{width:260px;height:260px;right:55px;top:40px;border-style:dashed;animation:spinSlow 18s linear infinite reverse}
+@keyframes spinSlow{to{transform:rotate(360deg)}}
+.card-float{transition:transform .35s ease,box-shadow .35s ease}
+.card-float:hover{transform:translateY(-7px) rotate(.4deg);box-shadow:0 25px 70px rgba(75,46,131,.16)}
+.tile,.support-card{position:relative;overflow:hidden}
+.tile:after,.support-card:after{content:"";position:absolute;width:90px;height:90px;border-radius:50%;right:-35px;bottom:-35px;background:var(--blush);opacity:.45;transition:transform .35s}
+.tile:hover:after,.support-card:hover:after{transform:scale(2)}
+.readmore{display:inline-flex;margin-top:16px;color:var(--p);font-size:14px;font-weight:800;border:0;background:none;padding:0}
+.detail-panel{display:none;margin-top:16px;padding:15px;border-radius:14px;background:#faf7fb;color:var(--muted);font-size:14px}
+.detail-panel.open{display:block;animation:fadeIn .3s ease}
+@keyframes fadeIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+.review-card{position:relative}
+.review-card img{width:64px;height:64px;border-radius:50%;object-fit:cover;display:block}
+.review-head{display:flex;align-items:center;gap:13px;margin-top:15px}
+.review-meta b{display:block}.review-meta small{color:var(--muted)}
+.reviews-wrap{position:relative}
+.review-controls{display:flex;gap:8px;justify-content:flex-end;margin-bottom:14px}
+.circle-btn{width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:#fff;color:var(--p);font-weight:800}
+.filter-row{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 22px}
+.filter-btn{border:1px solid var(--line);background:#fff;border-radius:999px;padding:9px 14px;font-weight:700;font-size:13px;color:var(--muted)}
+.filter-btn.active{background:var(--p);color:#fff;border-color:var(--p)}
+.world-card{transition:transform .3s ease,box-shadow .3s ease}
+.world-card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.toast{position:fixed;right:20px;bottom:20px;z-index:100;background:#241b2d;color:#fff;padding:13px 17px;border-radius:13px;box-shadow:var(--shadow);display:none;font-size:13px}
+.toast.show{display:block;animation:toastIn .25s ease}
+@keyframes toastIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.faq{border-top:1px solid var(--line)}.faq-item{border-bottom:1px solid var(--line)}
+.faq-q{width:100%;padding:20px 0;border:0;background:none;text-align:left;font-weight:800;display:flex;justify-content:space-between;color:var(--ink)}
+.faq-a{display:none;padding:0 0 20px;color:var(--muted);font-size:14px}.faq-item.open .faq-a{display:block}
+.backtop{position:fixed;right:20px;bottom:20px;display:none;width:44px;height:44px;border:0;border-radius:50%;background:var(--p);color:#fff;z-index:40;box-shadow:var(--shadow)}
+.backtop.show{display:block}
+@media(max-width:900px){.hero-art:before,.hero-art:after{display:none}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
+
+/* v4 application UI */
+.action-icon{width:42px;height:42px;border:1px solid var(--line);border-radius:13px;background:#fff;display:inline-grid;place-items:center;font-size:18px;cursor:pointer;transition:.2s}
+.action-icon:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(75,46,131,.12)}
+.icon-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.icon-option{padding:18px;border:1px solid var(--line);border-radius:18px;background:#fff;cursor:pointer;text-align:left;transition:.2s}
+.icon-option:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.icon-option .big-icon{font-size:27px;margin-bottom:8px}.icon-option b{display:block}.icon-option small{color:var(--muted)}
+.modal-panel{max-height:85vh;overflow:auto}
+.app-shell{display:none}.app-shell.active{display:block}
+.app-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}
+.app-tab{border:1px solid var(--line);background:#fff;border-radius:999px;padding:9px 14px;font-weight:800;cursor:pointer}
+.app-tab.active{background:var(--p);color:#fff;border-color:var(--p)}
+.app-view{display:none}.app-view.active{display:block}
+.data-list{display:grid;gap:10px}.data-item{padding:16px;border:1px solid var(--line);border-radius:16px;background:#fff}
+.status{display:inline-block;padding:5px 9px;border-radius:999px;font-size:11px;font-weight:800;background:#f0eaf8;color:var(--p)}
+.status.pending{background:#fff4da;color:#8a5a00}.status.confirmed{background:#e7f6ed;color:#1f7042}
+.config-box{padding:18px;border-radius:18px;background:#fbf9fd;border:1px dashed #c9bdd4;margin-top:14px}
+.config-box code{font-size:12px;word-break:break-all}
+@media(max-width:800px){.icon-grid{grid-template-columns:repeat(2,1fr)}}
+
+.support-card,.tile,.person,.review{cursor:pointer}
+.support-card .card-action{display:inline-flex;margin-top:14px;border:0;background:var(--p);color:#fff;border-radius:999px;padding:9px 13px;font-weight:800;cursor:pointer}
+.community-join{margin-top:24px;padding:28px;border-radius:24px;background:linear-gradient(135deg,#4b2e83,#7653a7);color:white;box-shadow:0 24px 70px rgba(75,46,131,.22)}
+.community-join p{opacity:.9;max-width:650px}
+.community-join .btn{background:#fff;color:#4b2e83}
+.quick-link{display:inline-flex;align-items:center;gap:7px}
+
+/* === mobile hamburger + slide panel === */
+.menu{position:relative;width:42px;height:42px;border-radius:12px;display:none;flex-direction:column;align-items:center;justify-content:center;gap:5px;background:#fff;border:1px solid var(--line)}
+.menu-bar{display:block;width:20px;height:2px;border-radius:2px;background:var(--p);transition:transform .3s ease,opacity .3s ease}
+.menu.open .menu-bar:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.menu.open .menu-bar:nth-child(2){opacity:0}
+.menu.open .menu-bar:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mobile-overlay{position:fixed;inset:0;background:rgba(25,15,30,.5);z-index:29;opacity:0;pointer-events:none;transition:opacity .3s ease;backdrop-filter:blur(2px)}
+.mobile-overlay.show{opacity:1;pointer-events:auto}
+.mobile-panel{position:fixed;top:0;right:0;height:100%;width:min(82vw,340px);background:#fff;z-index:30;padding:22px;box-shadow:-20px 0 55px rgba(75,46,131,.18);transform:translateX(100%);transition:transform .38s cubic-bezier(.2,.7,.2,1);display:flex;flex-direction:column;gap:6px}
+.mobile-panel.open{transform:translateX(0)}
+.mobile-panel-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
+.mobile-links{display:flex;flex-direction:column;gap:2px;margin-bottom:10px}
+.mobile-links a{padding:13px 4px;border-bottom:1px solid var(--line);font-weight:700;font-size:15px}
+@media(max-width:900px){.menu{display:flex}}
+
+/* === 3D + motion layer === */
+.tilt-el{transition:transform .12s ease-out,box-shadow .3s ease;will-change:transform}
+.hero-art{perspective:1200px}
+.hero-art .card-float,.hero-art .orb{transform-style:preserve-3d}
+.btn.primary{transform-style:preserve-3d}
+.btn.primary:active{transform:translateY(0) scale(.97)}
+.brand .mark{transform-style:preserve-3d}
+.grid3 .reveal:nth-child(2),.grid4 .reveal:nth-child(2),.people-grid .reveal:nth-child(2),.reviews .reveal:nth-child(2),.icon-grid .reveal:nth-child(2){transition-delay:.06s}
+.grid3 .reveal:nth-child(3),.grid4 .reveal:nth-child(3),.people-grid .reveal:nth-child(3),.reviews .reveal:nth-child(3),.icon-grid .reveal:nth-child(3){transition-delay:.12s}
+.grid3 .reveal:nth-child(4),.grid4 .reveal:nth-child(4),.people-grid .reveal:nth-child(4),.icon-grid .reveal:nth-child(4){transition-delay:.18s}
+.grid4 .reveal:nth-child(5),.people-grid .reveal:nth-child(5),.icon-grid .reveal:nth-child(5){transition-delay:.24s}
+.grid4 .reveal:nth-child(6),.people-grid .reveal:nth-child(6),.icon-grid .reveal:nth-child(6){transition-delay:.3s}
+.grid4 .reveal:nth-child(7),.people-grid .reveal:nth-child(7),.icon-grid .reveal:nth-child(7){transition-delay:.36s}
+.grid4 .reveal:nth-child(8),.people-grid .reveal:nth-child(8),.icon-grid .reveal:nth-child(8){transition-delay:.42s}
+.icon-option{transform-style:preserve-3d}
+.icon-option .big-icon{transition:transform .35s cubic-bezier(.2,.7,.2,1)}
+.icon-option:hover .big-icon{transform:translateZ(18px) rotateY(-12deg) scale(1.12)}
+.support-card .icon,.tile .icon{display:inline-block;transition:transform .35s cubic-bezier(.2,.7,.2,1)}
+.support-card:hover .icon,.tile:hover .icon{transform:translateZ(14px) rotateY(-10deg) scale(1.08)}
+.person img{transition:transform .5s ease}
+.person.world-card:hover img{transform:scale(1.08) rotate(.5deg)}
+.step{transition:transform .3s ease}
+.step:hover{transform:translateY(-6px)}
+.community-join{transition:transform .35s ease,box-shadow .35s ease}
+.community-join:hover{transform:translateY(-4px) rotateX(1deg);box-shadow:0 34px 90px rgba(75,46,131,.3)}
+@media(prefers-reduced-motion:reduce){.tilt-el{transform:none!important;transition:none!important}.icon-option:hover .big-icon,.support-card:hover .icon,.tile:hover .icon,.person.world-card:hover img,.step:hover,.community-join:hover{transform:none!important}}
 </style>
-
-
-<style id="psychologist-visual-enhancement">
-.psychologist-focus{
-  position:relative;overflow:hidden;background:
-  radial-gradient(circle at 12% 20%,rgba(20,184,166,.20),transparent 27%),
-  radial-gradient(circle at 88% 18%,rgba(124,58,237,.18),transparent 29%),
-  linear-gradient(135deg,#062c43 0%,#083f58 47%,#0f766e 100%);
-  color:#fff;
-}
-.psychologist-focus:before{content:"";position:absolute;inset:0;opacity:.13;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:22px 22px}
-.psych-focus-grid{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:35px;align-items:center;min-height:520px}
-.psych-focus-copy{position:relative;z-index:2;max-width:700px}
-.psych-focus-copy .section-kicker{color:#7ee8de;background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.18)}
-.psych-focus-copy h2{font-size:clamp(2.35rem,5vw,4.4rem);line-height:1.02;color:#fff;margin:16px 0 20px;letter-spacing:-.045em}
-.psych-focus-copy p{color:#d5ebee;font-size:1.03rem;line-height:1.78}
-.psych-focus-copy .psych-lead{font-size:1.17rem;color:#f0fbfb}
-.psych-pills{display:flex;flex-wrap:wrap;gap:9px;margin:22px 0 27px}
-.psych-pills span{padding:9px 12px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.09);border-radius:999px;font-size:.77rem;font-weight:800;color:#e5fbf8;backdrop-filter:blur(8px)}
-.psych-visual{position:relative;min-height:430px;display:grid;place-items:center}
-.brain-glow{width:185px;height:185px;border-radius:50%;display:grid;place-items:center;font-size:5.4rem;background:radial-gradient(circle,#dffbf8 0%,#8be6dc 31%,rgba(20,184,166,.2) 69%,transparent 70%);box-shadow:0 0 90px rgba(91,234,220,.35);animation:brainFloat 5s ease-in-out infinite;z-index:2}
-.orbit{position:absolute;border:1px solid rgba(255,255,255,.22);border-radius:50%;transform:rotate(-22deg)}
-.orbit-one{width:330px;height:210px}.orbit-two{width:420px;height:275px;transform:rotate(24deg);border-color:rgba(255,255,255,.12)}
-.floating-card{position:absolute;z-index:3;display:flex;flex-direction:column;padding:13px 16px;border-radius:16px;background:rgba(255,255,255,.94);color:#082f49;box-shadow:0 18px 38px rgba(0,0,0,.18);animation:cardFloat 5s ease-in-out infinite}
-.floating-card span{font-size:.72rem;color:#607583;margin-top:3px}.card-one{left:2%;top:14%}.card-two{right:0;top:32%;animation-delay:1s}.card-three{left:14%;bottom:10%;animation-delay:2s}
-@keyframes brainFloat{50%{transform:translateY(-10px) scale(1.03)}}@keyframes cardFloat{50%{transform:translateY(-7px)}}
-.therapy-approach{background:linear-gradient(180deg,#fff 0%,#f4fafb 100%);position:relative}
-.centered{text-align:center;max-width:850px;margin-left:auto;margin-right:auto}
-.therapy-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
-.therapy-cards article{background:#fff;border:1px solid #dbe9ed;border-radius:22px;padding:24px;box-shadow:0 12px 34px rgba(8,47,73,.07);transition:transform .2s,box-shadow .2s,border-color .2s;position:relative;overflow:hidden}
-.therapy-cards article:before{content:"";position:absolute;left:0;top:0;width:100%;height:4px;background:linear-gradient(90deg,#14b8a6,#7c3aed,#f97316)}
-.therapy-cards article:hover{transform:translateY(-7px);box-shadow:0 24px 50px rgba(8,47,73,.13);border-color:#a8d9d5}
-.therapy-icon{display:grid;place-items:center;width:52px;height:52px;border-radius:16px;background:#eaf8f7;font-size:1.45rem;margin-bottom:14px}
-.therapy-cards h3{margin:0 0 8px;color:#082f49}.therapy-cards p{margin:0;color:#5c7180;line-height:1.65;font-size:.9rem}
-.therapy-boundary{margin:25px auto 0;max-width:1000px;padding:16px 19px;border-left:5px solid #7c3aed;background:#f5f3ff;color:#51466f;border-radius:13px;line-height:1.6;font-size:.86rem}
-.therapy-boundary strong{color:#5b21b6}
-@media(max-width:850px){
- .psych-focus-grid{grid-template-columns:1fr;min-height:auto;padding:25px 0 45px}.psych-focus-copy h2{font-size:2.65rem}
- .psych-visual{min-height:340px}.therapy-cards{grid-template-columns:1fr 1fr}
-}
-@media(max-width:560px){
- .psych-focus-copy h2{font-size:2.2rem}.psych-focus-copy .psych-lead{font-size:1rem}
- .psych-visual{min-height:300px}.brain-glow{width:140px;height:140px;font-size:4rem}.orbit-one{width:260px;height:170px}.orbit-two{width:315px;height:205px}
- .floating-card{font-size:.8rem}.card-one{left:0}.card-two{right:0}.card-three{left:3%}
- .therapy-cards{grid-template-columns:1fr}
-}
-</style>
-
-
-<link rel="icon" type="image/jpeg" href="assets/humraaz-logo.jpeg">
-<style id="humraaz-logo-integration">
-.brand-logo{
-  display:flex;align-items:center;text-decoration:none;flex:0 0 auto;
-  width:112px;height:66px;overflow:hidden;border-radius:10px;
-  background:#fff;box-shadow:0 8px 22px rgba(8,47,73,.08);
-}
-.brand-logo img{
-  display:block;width:100%;height:100%;object-fit:contain;
-  /* The supplied logo file is used exactly as provided. No filters, recoloring, or transforms. */
-}
-@media(max-width:700px){
-  .brand-logo{width:92px;height:56px}
-}
-</style>
-
-
-<style id="javeria-final-mobile-navigation">
-/* FINAL MOBILE NAVIGATION: Back + Hamburger; removes the old three-dot placeholder */
-.nav { position:relative; }
-.nav-links { margin-left:auto; display:flex; align-items:center; gap:25px; }
-.nav-links a { text-decoration:none; font-weight:600; color:#365064; }
-.nav-links a:hover { color:#0f766e; }
-.mobile-controls, .mobile-navigation { display:none; }
-@media (max-width:700px) {
-  .nav-links { display:none !important; }
-  .mobile-controls { margin-left:auto; display:flex; align-items:center; gap:8px; }
-  .mobile-back, .mobile-menu-toggle { width:44px; height:44px; padding:0; border:1px solid #d9e4e8; border-radius:13px; background:#fff; color:#082f49; cursor:pointer; display:flex; align-items:center; justify-content:center; box-shadow:0 5px 16px rgba(8,47,73,.09); -webkit-tap-highlight-color:transparent; transition:transform .18s ease,background .18s ease,box-shadow .18s ease; }
-  .mobile-back:active, .mobile-menu-toggle:active { transform:scale(.94); }
-  .mobile-back span { font-size:27px; line-height:1; font-weight:400; }
-  .mobile-menu-toggle { flex-direction:column; gap:5px; }
-  .mobile-menu-toggle span { width:21px; height:2px; border-radius:10px; background:#082f49; transition:transform .22s ease,opacity .16s ease; }
-  .mobile-menu-toggle.active span:nth-child(1) { transform:translateY(7px) rotate(45deg); }
-  .mobile-menu-toggle.active span:nth-child(2) { opacity:0; }
-  .mobile-menu-toggle.active span:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
-  .mobile-navigation { position:absolute; display:none; top:calc(100% + 10px); left:8px; right:8px; z-index:99999; padding:10px; background:rgba(255,255,255,.98); border:1px solid #dce7ec; border-radius:18px; box-shadow:0 20px 50px rgba(8,47,73,.17); backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px); }
-  .mobile-navigation.open { display:block; animation:javeriaMenuOpen .2s ease both; }
-  .mobile-navigation a { display:flex; align-items:center; min-height:52px; padding:0 16px; border-radius:12px; color:#082f49; text-decoration:none; font-size:1rem; font-weight:700; }
-  .mobile-navigation a:hover, .mobile-navigation a:active { background:#edf8f8; color:#0f766e; }
-}
-@media (min-width:701px) { .mobile-controls, .mobile-navigation { display:none !important; } }
-@keyframes javeriaMenuOpen { from { opacity:0; transform:translateY(-8px); } to { opacity:1; transform:translateY(0); } }
-</style>
-
 </head>
 <body>
-  <div class="topbar"><div class="topbar-inner"><span><strong>Professional appointment requests</strong> · Applied Psychology & Educational Counseling</span><span>Private, respectful & purpose-focused</span></div></div>
-<header>
-    <nav class="nav">
+<div class="top">Need support? <a href="https://wa.me/923245346975" target="_blank" rel="noopener">Message us on WhatsApp</a> · Email <a href="mailto:hamidalieducator@gmail.com">hamidalieducator@gmail.com</a> · WhatsApp <a href="https://wa.me/923245346975" target="_blank" rel="noopener">0324 5346975</a></div>
+<header><div class="container nav">
+<a class="brand" href="#home"><span class="mark">H</span>Humraz</a>
+<nav>
+<a href="#about">About</a><a href="#support">Support</a><a href="#community">Community</a><a href="#resources">Resources</a><a href="#partners">Partner with us</a><a href="#contact">Contact</a>
+<button class="btn primary" data-modal="support">Find support</button>
+</nav><button class="menu" id="menu" aria-label="Open menu" aria-expanded="false"><span class="menu-bar"></span><span class="menu-bar"></span><span class="menu-bar"></span></button>
+</div></header>
+<div class="mobile-overlay" id="mobileOverlay"></div>
+<div id="mobileNav" class="mobile-panel" aria-hidden="true">
+<div class="mobile-panel-head"><span class="brand" style="font-size:22px"><span class="mark" style="width:30px;height:30px;font-size:14px">H</span>Humraz</span><button class="close" id="mobileClose" aria-label="Close menu">×</button></div>
+<div class="mobile-links"><a href="#about">About</a><a href="#support">Support</a><a href="#community">Community</a><a href="#resources">Resources</a><a href="#partners">Partner with us</a><a href="#contact">Contact</a></div>
+<button class="btn primary" style="width:100%;margin-top:6px" data-modal="support">Find support</button>
+<button class="btn soft" style="width:100%;margin-top:10px" data-wa-topic="General enquiry">Message us on WhatsApp →</button>
+</div>
 
-        <a class="brand" href="#top">
+<main id="home">
+<section class="hero"><div class="container hero-grid">
+<div><div class="eyebrow">A space for you</div><h1>You don't have to carry it <em>alone.</em></h1><p>Humraz is a calm, confidential place to find support, understand yourself, build healthier connections and feel a little more grounded.</p><div class="actions"><button class="btn primary" data-modal="support">Find support</button><a class="btn soft" href="#resources">Explore resources</a></div></div>
+<div class="hero-art"><div class="orb parallax-orb"></div><div class="card-float heart tilt-el"><div class="heart-icon">♡</div><b>A little space to breathe.</b><div class="mini">Support that meets you where you are.</div></div><div class="card-float quote tilt-el"><b>“Being heard can be the beginning of feeling better.”</b><div class="mini">Humraz</div></div><div class="spark">✦</div></div>
+</div></section>
 
-            <span class="brand-mark brand-logo">
-                <img
-                    src="assets/humraaz-logo.jpeg"
-                    alt="Humraaz — Your Story Stays Safe"
-                >
-            </span>
+<section id="about"><div class="container story"><div class="story-box"><span>Our approach</span><strong>Human first.<br>Always.</strong></div><div class="story-text"><div class="eyebrow">About Humraz</div><h2 style="font:600 45px/1.12 'Playfair Display';margin:8px 0 15px">Support should feel human, not clinical.</h2><p>Humraz brings trusted support, practical resources and community together in one welcoming space. Whether you are navigating a difficult season, supporting someone you love, or simply trying to understand yourself better, you can start here.</p><div class="check"><i>✓</i> Confidential and respectful</div><div class="check"><i>✓</i> Practical, accessible support</div><div class="check"><i>✓</i> Built around real people and real lives</div></div></div></section>
 
-            <span>
-                Javeria Atif
-                <small>Applied Psychology & Counseling</small>
-            </span>
+<section id="support" class="tinted"><div class="container"><div class="section-head"><div class="eyebrow">Support</div><h2>Find the kind of support you need.</h2><p>Start with what feels closest to your situation. You can take the next step at your own pace.</p></div>
 
-        </a>
+<div class="filter-row" aria-label="Support filters">
+<button class="filter-btn active" data-filter="all">All</button>
+<button class="filter-btn" data-filter="women">Women</button>
+<button class="filter-btn" data-filter="student">Students</button>
+<button class="filter-btn" data-filter="professional">Professional</button>
+</div>
+<div class="grid3">
+<div class="support-card reveal tilt-el" data-category="professional"><div class="icon">◌</div><h3>Psychological support</h3><p>Explore professional support for emotional wellbeing, stress, relationships and life challenges.</p><a href="#" data-modal="support">Find a professional →</a></div>
+<div class="support-card reveal tilt-el" data-category="women"><div class="icon">♡</div><h3>Humraz Women</h3><p>A dedicated space for women's wellbeing, confidence, transitions and connection.</p><a href="#resources">Explore support →</a></div>
+<div class="support-card reveal tilt-el" data-category="student"><div class="icon">⌁</div><h3>Humraz Student</h3><p>Support for students navigating study pressure, identity, relationships and change.</p><a href="#resources">Explore support →</a></div>
+<div class="support-card reveal tilt-el" data-category="all"><div class="icon">↗</div><h3>Life transitions</h3><p>Guidance for moments when life is changing and you are figuring out what comes next.</p><a href="#resources">Explore guides →</a></div>
+<div class="support-card reveal tilt-el" data-category="all"><div class="icon">✦</div><h3>Workshops</h3><p>Learn practical tools for self-understanding, communication and everyday wellbeing.</p><a href="#community">See workshops →</a></div>
+<div class="support-card reveal tilt-el" data-category="professional"><div class="icon">◎</div><h3>Find a professional</h3><p>Connect with a suitable support professional through the Humraz network.</p><a href="#" data-modal="support">Start here →</a></div>
+</div></div></section>
 
-        <div class="nav-links" aria-label="Primary navigation">
-            <a href="#about">About</a>
-            <a href="#support">Appointment</a>
-            <a href="#experience">Experience</a>
-        </div>
+<section id="community"><div class="container"><div class="section-head"><div class="eyebrow">Community</div><h2>Connection changes how we carry things.</h2><p>Small circles, useful conversations and shared experiences can make difficult seasons feel less isolating.</p></div>
+<div class="grid4"><div class="tile reveal tilt-el"><div class="icon">◯</div><h3>Humraz Circles</h3><p>Small, supportive spaces for honest conversations.</p></div><div class="tile reveal tilt-el"><div class="icon">✦</div><h3>Events</h3><p>Community gatherings designed around wellbeing and connection.</p></div><div class="tile reveal tilt-el"><div class="icon">◉</div><h3>Webinars</h3><p>Accessible conversations with knowledgeable guests.</p></div><div class="tile reveal tilt-el"><div class="icon">∞</div><h3>Initiatives</h3><p>Projects that make wellbeing support more reachable.</p></div></div></div></section>
 
-        <div class="mobile-controls" aria-label="Mobile navigation controls">
-            <button class="mobile-back" id="mobileBack" type="button" aria-label="Go back" title="Go back">
-                <span aria-hidden="true">←</span>
-            </button>
-            <button class="mobile-menu-toggle" id="mobileMenuToggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mobileNavigation" title="Open navigation">
-                <span></span><span></span><span></span>
-            </button>
-        </div>
+<section id="resources" class="tinted"><div class="container"><div class="section-head"><div class="eyebrow">Resources</div><h2>Useful things to come back to.</h2><p>Clear, approachable reading for everyday questions about wellbeing and relationships.</p></div>
+<div class="grid4"><div class="tile reveal tilt-el"><h3>Mental health</h3><p>Understand emotions, stress, boundaries and common wellbeing concerns.</p><button class="readmore" data-read="mh">Read more →</button><div class="detail-panel" id="mh">Explore practical explanations about stress, emotional wellbeing, boundaries and when seeking professional support may be useful.</div></div><div class="tile reveal tilt-el"><h3>Women's wellbeing</h3><p>Thoughtful resources for the experiences that shape women's lives.</p><button class="readmore" data-read="women">Read more →</button><div class="detail-panel" id="women">A growing collection for confidence, transitions, relationships, self-care and navigating life changes.</div></div><div class="tile reveal tilt-el"><h3>Student wellbeing</h3><p>Practical guidance for study, pressure, identity and balance.</p><button class="readmore" data-read="student">Read more →</button><div class="detail-panel" id="student">Study pressure, routines, motivation, social connection, identity and healthier ways to approach academic stress.</div></div><div class="tile reveal tilt-el"><h3>Relationships</h3><p>Communication, boundaries, conflict and healthier connection.</p><button class="readmore" data-read="relationships">Read more →</button><div class="detail-panel" id="relationships">Learn about communication patterns, boundaries, conflict repair and respectful connection.</div></div><div class="tile reveal tilt-el"><h3>Self-understanding</h3><p>Prompts and ideas to help you understand yourself with more kindness.</p><button class="readmore" data-read="self">Read more →</button><div class="detail-panel" id="self">Reflection prompts and approachable ideas for noticing emotions, values, habits and personal patterns.</div></div><div class="tile reveal tilt-el"><h3>Guides</h3><p>Short, practical guides you can save and return to.</p><button class="readmore" data-read="guides">Read more →</button><div class="detail-panel" id="guides">Short-format guides designed for quick reading and revisiting when you need a practical next step.</div></div><div class="tile reveal tilt-el"><h3>Articles</h3><p>Longer reads exploring wellbeing and human connection.</p><button class="readmore" data-read="articles">Read more →</button><div class="detail-panel" id="articles">Longer-form educational content will be added here as the Humraz library grows.</div></div><div class="tile reveal tilt-el"><h3>Browse all</h3><p>More resources can be added as your Humraz library grows.</p><button class="readmore" data-read="allresources">View library →</button><div class="detail-panel" id="allresources">More categorized resources will be added here over time — check back regularly.</div></div></div></div></section>
 
-        <div class="mobile-navigation" id="mobileNavigation" aria-label="Mobile navigation">
-            <a href="#about">About</a>
-            <a href="#support">Appointment</a>
-            <a href="#experience">Experience</a>
-        </div>
 
-    </nav>
-</header>
 
-  <main id="top">
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-grid">
-        <div>
-          <span class="eyebrow">Applied Psychology • Educational Counseling</span>
-          <h1>Thoughtful support for difficult moments and important decisions.</h1>
-          <p class="hero-copy">A professional, compassionate space led by Javeria Atif, an experienced Applied Psychology and Educational Counseling professional, for people navigating emotional challenges, academic pressure, life transitions, relationships, confidence, student adjustment and a wide range of personal and educational concerns. Start by choosing what you would like support with.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#support">Explore support areas →</a>
-            <a class="btn btn-secondary" href="#support">Prepare an appointment request</a>
-          </div>
-          <div class="trust-row"><span>🎓 Applied Psychology</span><span>🧠 Educational Counseling</span><span>💬 Student & Personal Support</span><span>🌱 Growth-focused</span></div>
-        </div>
-        <div class="portrait-card">
-          <img src="assets/javeria-atif-portrait.png" alt="Professional portrait of Javeria Atif">
-          <div class="portrait-caption"><div><strong>Javeria Atif</strong><br><span>Educational Counselor</span></div><span>Rawalpindi, Pakistan</span></div>
-        </div>
-      </div>
-    </section>
+<section class="world"><div class="container">
+<div class="section-head reveal"><div class="eyebrow">Around the world</div><h2>A welcoming space for people everywhere.</h2><p>A welcoming community can include people and stories from every corner of the world.</p></div>
+<div class="people-grid">
+<div class="person world-card reveal"><img loading="lazy" alt="Illustrative stock portrait representing a community member in East Asia" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=700&q=80"><div class="person-body"><b>East Asia</b><small>Illustrative stock portrait · Student wellbeing</small></div></div>
+<div class="person world-card reveal"><img loading="lazy" alt="Illustrative stock portrait representing a community member in Europe" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=700&q=80"><div class="person-body"><b>Europe</b><small>Illustrative stock portrait · Life transitions</small></div></div>
+<div class="person world-card reveal"><img loading="lazy" alt="Illustrative stock portrait representing a community member in Africa" src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=700&q=80"><div class="person-body"><b>Africa</b><small>Illustrative stock portrait · Women's wellbeing</small></div></div>
+<div class="person world-card reveal"><img loading="lazy" alt="Illustrative stock portrait representing a community member in North America" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=700&q=80"><div class="person-body"><b>North America</b><small>Illustrative stock portrait · Relationships</small></div></div>
+<div class="person world-card reveal"><img loading="lazy" alt="Illustrative stock portrait representing a community member in South Asia" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=700&q=80"><div class="person-body"><b>South Asia</b><small>Illustrative stock portrait · Self-understanding</small></div></div>
+<div class="person world-card reveal"><img loading="lazy" alt="Illustrative stock portrait representing a community member in South America" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=700&q=80"><div class="person-body"><b>South America</b><small>Illustrative stock portrait · Community</small></div></div>
+<div class="person world-card reveal"><img loading="lazy" alt="Illustrative stock portrait representing a community member in Oceania" src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=700&q=80"><div class="person-body"><b>Oceania</b><small>Illustrative stock portrait · Wellbeing</small></div></div>
+<div class="person world-card reveal"><img loading="lazy" alt="Illustrative stock portrait representing a community member in the Middle East" src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=700&q=80"><div class="person-body"><b>Middle East</b><small>Illustrative stock portrait · Connection</small></div></div>
+</div>
+<div class="disclaimer">All portraits in this section are illustrative stock images. They are not Humraz clients, staff or verified testimonials.</div>
+</div></section>
+<section class="tinted"><div class="container">
+<div class="section-head reveal"><div class="eyebrow">Community voices</div><h2>What people can value about a space like this.</h2><p>These are placeholder examples for the design. They must be replaced with permission-based, verifiable testimonials before publication.</p></div>
+<div class="reviews-wrap">
+<div class="review-controls"><button class="circle-btn" id="prevReview" aria-label="Previous review">←</button><button class="circle-btn" id="nextReview" aria-label="Next review">→</button></div>
+<div class="reviews" id="reviews">
+<div class="review review-card reveal"><div class="stars">★★★★★</div><p>“The structure made it easier to understand what kind of support I was looking for.”</p><div class="review-head"><img alt="Illustrative stock portrait" src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=160&q=80"><div class="review-meta"><b>Community member</b><small>Student · Africa</small></div></div></div>
+<div class="review review-card reveal"><div class="stars">★★★★★</div><p>“I liked that the resources were approachable and did not make me feel judged.”</p><div class="review-head"><img alt="Illustrative stock portrait" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=160&q=80"><div class="review-meta"><b>Community member</b><small>Community member · South Asia</small></div></div></div>
+<div class="review review-card reveal"><div class="stars">★★★★★</div><p>“Having a calm starting point helped me take the next step at my own pace.”</p><div class="review-head"><img alt="Illustrative stock portrait" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=160&q=80"><div class="review-meta"><b>Community member</b><small>Community member · North America</small></div></div></div>
+<div class="review review-card reveal"><div class="stars">★★★★★</div><p>“A clear starting point can make a complicated situation feel more manageable.”</p><div class="review-head"><img alt="Illustrative stock portrait" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=160&q=80"><div class="review-meta"><b>Community member</b><small>Community member · Europe</small></div></div></div>
+<div class="review review-card reveal"><div class="stars">★★★★★</div><p>“The idea of taking one small step at a time feels much more approachable.”</p><div class="review-head"><img alt="Illustrative stock portrait" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=160&q=80"><div class="review-meta"><b>Community member</b><small>Community member · East Asia</small></div></div></div>
+<div class="review review-card reveal"><div class="stars">★★★★★</div><p>“It helps to have information that feels human and easy to return to.”</p><div class="review-head"><img alt="Illustrative stock portrait" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=160&q=80"><div class="review-meta"><b>Community member</b><small>Community member · South America</small></div></div></div>
+</div>
+<div class="disclaimer"></div>
+</div></div></section>
 
-    <section id="about">
-      <div class="section">
-        <div class="section-head"><span class="section-kicker">Professional focus</span><h2>Applied Psychology with an education-centered perspective</h2><p class="lead">Javeria Atif brings a broad, multidisciplinary professional background spanning Applied Psychology, Educational Counseling, student services, teaching, child-focused work and administrative coordination. Her work is grounded in attentive listening, professional communication, contextual understanding and practical guidance across a wide range of personal, academic and educational concerns. The approach is designed to listen carefully, understand context and help people move toward practical next steps.</p></div>
-        <div class="feature-grid">
-          <article class="feature"><div class="icon i-teal">🧠</div><h3>Applied Psychology</h3><p>Psychology-informed support for everyday emotional, behavioral, interpersonal and adjustment concerns.</p></article>
-          <article class="feature"><div class="icon i-blue">🎓</div><h3>Educational Counseling</h3><p>Support around academic pressure, student adjustment, education choices and future planning.</p></article>
-          <article class="feature"><div class="icon i-purple">💬</div><h3>Person-Centered Conversation</h3><p>A respectful setting where you can explain what is happening in your own words and at your own pace.</p></article>
-          <article class="feature"><div class="icon i-orange">🌱</div><h3>Personal Growth</h3><p>Build self-awareness, confidence, routines, communication skills and healthier ways of handling challenges.</p></article>
-          <article class="feature"><div class="icon i-green">👨‍👩‍👧</div><h3>Child & Family Context</h3><p>Experience in child psychology and education supports a broader understanding of developmental and family contexts.</p></article>
-          <article class="feature"><div class="icon i-coral">🧭</div><h3>Practical Direction</h3><p>Turn a complicated situation into clear priorities, questions and appropriate next steps.</p></article>
-        </div>
-        <div class="contact-strip" aria-label="Direct contact options">
-          <div><strong>Ready to reach out?</strong><span>Use WhatsApp to request an appointment. LinkedIn is available to review Javeria's professional background and credibility.</span></div>
-          <div class="contact-actions">
-            <a class="btn btn-wa" href="https://wa.me/923245346975" target="_blank" rel="noopener noreferrer">WhatsApp · 0324 5346975 ↗</a>
-            <a class="btn btn-secondary" href="https://www.linkedin.com/in/javeria-atif-a07320261?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer">Professional LinkedIn ↗</a>
-          </div>
-        </div>
-      </div>
-    </section>
+<section class="tinted" id="humraz-community"><div class="container">
+<div class="community-join reveal">
+<div class="eyebrow" style="color:#fff;opacity:.85">Humraz Community</div>
+<h2 style="color:#fff">You don't have to navigate everything alone.</h2>
+<p>Join the Humraz WhatsApp community for updates, community conversations, workshops and wellbeing resources.</p>
+<a class="btn" id="communityGroupLink" href="https://chat.whatsapp.com/REPLACE_WITH_YOUR_HUMRAZ_GROUP_LINK" target="_blank" rel="noopener">Join the WhatsApp Community →</a>
+<p style="font-size:12px;margin-top:12px;opacity:.75">Until the official group link is added, this button messages the Humraz team directly on WhatsApp to add you.</p>
+</div>
+</div></section>
+<section id="partners"><div class="container"><div class="banner reveal"><div><div class="eyebrow" style="color:#e9d9f3">Partner with us</div><h2>Bring better wellbeing support to your community.</h2><p>Humraz can work with universities, organizations, women's organizations and workplaces to create thoughtful wellbeing experiences.</p></div><button class="btn soft" data-modal="partner">Start a conversation</button></div></div></section>
 
-    <section id="support" class="appointment-hub">
-      <div class="section">
-        <div class="section-head">
-          <span class="section-kicker">Start your appointment request</span>
-          <h2>Tell Javeria what you would like help with</h2>
-          <p class="lead">Choose one or more areas below, then complete the short form immediately underneath. Everything is part of the same appointment-request process — there is no separate booking system.</p>
-        </div>
+<section><div class="container"><div class="section-head"><div class="eyebrow">How it works</div><h2>A gentle place to begin.</h2></div><div class="steps"><div class="step reveal"><b>Start where you are</b><h3>Tell us what you need.</h3><p>You do not need the perfect words. Choose the area that feels most relevant.</p></div><div class="step reveal"><b>Find your next step</b><h3>Explore the right support.</h3><p>Browse resources, community options or professional support.</p></div><div class="step reveal"><b>Keep what helps</b><h3>Build your own support space.</h3><p>Save useful resources and manage appointments through My Humraz.</p></div></div></div></section>
 
-        <div class="appointment-flow">
-          <div class="flow-step">
-            <div class="step-number">1</div>
-            <div>
-              <strong>Choose your area(s) of concern</strong>
-              <span>Select anything that describes what you would like to discuss.</span>
-            </div>
-          </div>
+<section id="community-options"><div class="container">
+<div class="section-head"><div class="eyebrow">Connect with Humraz</div><h2>Choose the support that feels right.</h2><p>Every option connects you directly with the Humraz team on WhatsApp.</p></div>
+<div class="icon-grid">
+<button class="icon-option reveal tilt-el" data-wa-topic="Psychological Support"><div class="big-icon">🧠</div><b>Psychological Support</b><small>Talk to our team →</small></button>
+<button class="icon-option reveal tilt-el" data-wa-topic="Student Wellbeing"><div class="big-icon">🎓</div><b>Student Wellbeing</b><small>Get student support →</small></button>
+<button class="icon-option reveal tilt-el" data-wa-topic="Women's Wellbeing"><div class="big-icon">♡</div><b>Women's Wellbeing</b><small>Connect with the team →</small></button>
+<button class="icon-option reveal tilt-el" data-wa-topic="Life Transitions"><div class="big-icon">↗</div><b>Life Transitions</b><small>Talk through your next step →</small></button>
+<button class="icon-option reveal tilt-el" data-wa-topic="Workshops"><div class="big-icon">◫</div><b>Workshops</b><small>Ask about upcoming sessions →</small></button>
+<button class="icon-option reveal tilt-el" data-wa-topic="Find a Professional"><div class="big-icon">◎</div><b>Find a Professional</b><small>Ask for a recommendation →</small></button>
+<button class="icon-option reveal tilt-el" data-wa-topic="Humraz Circles"><div class="big-icon">◌</div><b>Humraz Circles</b><small>Join the community →</small></button>
+<button class="icon-option reveal tilt-el" data-wa-topic="Events & Webinars"><div class="big-icon">✦</div><b>Events & Webinars</b><small>Get event information →</small></button>
+</div></div></section>
+<section><div class="container"><div class="section-head"><div class="eyebrow">FAQs</div><h2>Questions, answered simply.</h2></div>
+<div class="faq">
+<div class="faq-item"><button class="faq-q">Is Humraz an emergency service? <span>+</span></button><div class="faq-a">No. Humraz is not an emergency service. The final production site should provide locally appropriate emergency guidance and safeguarding routes.</div></div>
+<div class="faq-item"><button class="faq-q">Can I book a professional? <span>+</span></button><div class="faq-a">Yes. Message Humraz on WhatsApp with what you're looking for, and the team will help match you with a suitable professional and confirm a date and time with you directly.</div></div>
+<div class="faq-item"><button class="faq-q">Do I need an account? <span>+</span></button><div class="faq-a">No. You can read every resource on this site and reach the Humraz team freely — no sign-up required.</div></div>
+<div class="faq-item"><button class="faq-q">How does the support request work? <span>+</span></button><div class="faq-a">The support form prepares a WhatsApp message containing the information you entered. You review it and press Send — that's the only way it reaches Humraz.</div></div>
+</div></div></section>
+<section class="cta" id="contact"><div class="container cta-inner"><div class="eyebrow">You can start small.</div><h2>What would feel helpful today?</h2><p>Whether you want to read, talk, learn or simply find your bearings, there is no wrong place to begin.</p><div class="actions" style="justify-content:center"><button class="btn primary" data-modal="support">Find support</button><button class="btn outline" data-wa-topic="General enquiry">Contact Humraz on WhatsApp →</button></div></div></section>
+</main>
 
-          <div class="support-grid" id="topicGrid">
-            <button type="button" class="topic" data-topic="0" aria-pressed="false">
-              <span class="topic-icon">🧠</span><b>Trauma & difficult experiences</b><span>Support after distressing or overwhelming experiences.</span>
-            </button>
-            <button type="button" class="topic" data-topic="1" aria-pressed="false">
-              <span class="topic-icon">🌦️</span><b>Mood changes & emotional ups and downs</b><span>Understanding changes in mood, emotions or motivation.</span>
-            </button>
-            <button type="button" class="topic" data-topic="2" aria-pressed="false">
-              <span class="topic-icon">💭</span><b>Anxiety, worry & overthinking</b><span>Support with persistent worry, fear, uncertainty or racing thoughts.</span>
-            </button>
-            <button type="button" class="topic" data-topic="3" aria-pressed="false">
-              <span class="topic-icon">🌿</span><b>Stress & feeling overwhelmed</b><span>Managing pressure, overload, demands and emotional exhaustion.</span>
-            </button>
-            <button type="button" class="topic" data-topic="4" aria-pressed="false">
-              <span class="topic-icon">✨</span><b>Self-confidence & self-esteem</b><span>Building confidence, self-worth and a healthier self-image.</span>
-            </button>
-            <button type="button" class="topic" data-topic="5" aria-pressed="false">
-              <span class="topic-icon">📚</span><b>Academic pressure & study concerns</b><span>Support with academic stress, exams, study habits and performance pressure.</span>
-            </button>
-            <button type="button" class="topic" data-topic="6" aria-pressed="false">
-              <span class="topic-icon">🎯</span><b>Career & education decisions</b><span>Guidance around educational choices, career direction and future plans.</span>
-            </button>
-            <button type="button" class="topic" data-topic="7" aria-pressed="false">
-              <span class="topic-icon">🎓</span><b>Student adjustment & transition</b><span>Support with adapting to university, school, a new environment or routine.</span>
-            </button>
-            <button type="button" class="topic" data-topic="8" aria-pressed="false">
-              <span class="topic-icon">🤝</span><b>Relationships & communication</b><span>Exploring communication, boundaries, conflict and interpersonal challenges.</span>
-            </button>
-            <button type="button" class="topic" data-topic="9" aria-pressed="false">
-              <span class="topic-icon">🌱</span><b>Personal growth & self-understanding</b><span>Reflection, personal development, strengths and meaningful goals.</span>
-            </button>
-            <button type="button" class="topic" data-topic="10" aria-pressed="false">
-              <span class="topic-icon">👧</span><b>Child & adolescent concerns</b><span>Age-appropriate support around emotional, behavioural, school or developmental concerns.</span>
-            </button>
-            <button type="button" class="topic" data-topic="11" aria-pressed="false">
-              <span class="topic-icon">🌙</span><b>Sleep, routine & lifestyle concerns</b><span>Support with routines, sleep-related difficulties and everyday functioning.</span>
-            </button>
-            <button type="button" class="topic" data-topic="12" aria-pressed="false">
-              <span class="topic-icon">🔄</span><b>Life transitions & major changes</b><span>Support through separation, relocation, loss, new roles or other major changes.</span>
-            </button>
-            <button type="button" class="topic" data-topic="13" aria-pressed="false">
-              <span class="topic-icon">👨‍👩‍👧</span><b>Parent / student guidance</b><span>Guidance for parents, students and families around educational or personal concerns.</span>
-            </button>
-            <button type="button" class="topic" data-topic="14" aria-pressed="false">
-              <span class="topic-icon">💙</span><b>Emotional wellbeing & coping</b><span>Developing healthier coping strategies and understanding emotional responses.</span>
-            </button>
-            <button type="button" class="topic" data-topic="15" aria-pressed="false">
-              <span class="topic-icon">➕</span><b>Something else</b><span>Describe another concern that is not listed above.</span>
-            </button>
-          </div>
+<footer><div class="container"><div class="footgrid"><div><div class="footbrand">Humraz</div><p>A thoughtful space for support, wellbeing and connection.</p><p>Need help? <a href="mailto:hamidalieducator@gmail.com">hamidalieducator@gmail.com</a><br>WhatsApp: <a href="https://wa.me/923245346975" target="_blank" rel="noopener">0324 5346975</a></p></div>
+<div><h4>About</h4><a href="#about">Our Story</a><a href="#about">Mission & Vision</a><a href="#about">Our Approach</a><a href="#about">Our Values</a><a href="#about">Our Team</a></div>
+<div><h4>Support</h4><a href="#support">Psychological Support</a><a href="#support">Humraz Women</a><a href="#support">Humraz Student</a><a href="#support">Life Transitions</a><a href="#support">Workshops</a></div>
+<div><h4>Community</h4><a href="#community">Humraz Circles</a><a href="#community">Events</a><a href="#community">Webinars</a><a href="#community">Initiatives</a></div></div>
+<div class="copy"><span>© <span id="year"></span> Humraz. All rights reserved.</span><span><a href="#" data-modal="privacy">Privacy</a> · <a href="#" data-modal="terms">Terms</a> · <a href="#" data-modal="safe">Safeguarding</a></span></div></div></footer>
 
-          <noscript><div class="custom-concern" style="margin-top:14px"><strong>JavaScript is disabled.</strong> The concern areas are still visible, but interactive selection and WhatsApp preparation require JavaScript to be enabled.</div></noscript>
-          <div class="custom-concern" id="customConcernWrap" hidden>
-            <label for="customConcern"><strong>Something else — tell Javeria about your concern</strong> <span>(required when selected)</span></label>
-            <textarea id="customConcern" maxlength="500" placeholder="Describe the area you would like to discuss in your own words..."></textarea>
-            <div class="hint">Share only what you are comfortable sharing. Please do not include emergency information.</div>
-          </div>
+<div class="modal" id="modal"><div class="dialog"><button class="close" id="close">×</button><div id="dialogContent"></div></div></div>
+<script>
+const modal=document.getElementById('modal'), content=document.getElementById('dialogContent');
+const forms={
+support:`<h2>Find support</h2><p>Tell us what you are looking for. When you send this, it opens a pre-filled WhatsApp message to the Humraz team so a real person can follow up with you directly — nothing is stored on this site.</p><form class="form" onsubmit="sendWhatsApp(event)"><label>Name</label><input id="waName" required placeholder="Your name"><label>Contact (WhatsApp or email)</label><input id="waContact" required placeholder="e.g. 03xx xxxxxxx or you@example.com"><label>What would you like help with?</label><select id="waTopic"><option>Psychological support</option><option>Women's wellbeing</option><option>Student wellbeing</option><option>Life transitions</option><option>Workshop</option><option>Find a professional</option></select><label>Message</label><textarea id="waMessage" rows="3" placeholder="Tell us a little about what you need"></textarea><button class="btn primary">Send via WhatsApp →</button><div class="notice">This opens WhatsApp with your message ready to send. Humraz only receives it once you press Send there.</div></form>`,
+partner:`<h2>Partner with Humraz</h2><p>Start a conversation about universities, organizations, women's organizations or corporate wellbeing. This opens a pre-filled WhatsApp message to the Humraz team.</p><form class="form" onsubmit="event.preventDefault();const name=document.getElementById('pName').value.trim();const org=document.getElementById('pOrg').value.trim();const email=document.getElementById('pEmail').value.trim();const area=document.getElementById('pArea').value;const msg=document.getElementById('pMsg').value.trim();const text='Humraz Partnership Enquiry\\n\\nName: '+name+'\\nOrganization: '+org+'\\nEmail: '+email+'\\nArea: '+area+'\\nMessage: '+msg;window.open('https://wa.me/923245346975?text='+encodeURIComponent(text),'_blank','noopener');"><label>Name</label><input id="pName" required><label>Organization</label><input id="pOrg" required><label>Work email</label><input id="pEmail" type="email" required><label>Partnership area</label><select id="pArea"><option>University</option><option>Organization</option><option>Women's organization</option><option>Corporate wellbeing</option></select><label>Message</label><textarea id="pMsg" rows="4"></textarea><button class="btn primary">Send via WhatsApp →</button></form>`,
+privacy:`<h2>Privacy Policy</h2><p style="font-size:12px;color:var(--muted);margin-bottom:14px">Last updated: ${new Date().toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric'})}</p><p><b>What we collect.</b> When you contact Humraz through WhatsApp, email or a form on this site, we receive the information you choose to share — such as your name, contact details and the message you send. We do not use cookies, tracking scripts or analytics to profile visitors on this site.</p><p><b>How we use it.</b> Information you share is used only to respond to your enquiry, connect you with an appropriate professional or resource, and improve the support we offer. We do not sell or rent personal information to third parties.</p><p><b>Storage and retention.</b> Messages sent via WhatsApp are stored in WhatsApp in line with WhatsApp's own privacy terms. We keep enquiry information only as long as needed to provide support or as required by law, and we take reasonable steps to keep it secure.</p><p><b>Your choices.</b> You can ask us at any time to tell you what information we hold about you, or to delete it, by messaging us on WhatsApp or emailing hamidalieducator@gmail.com.</p><p style="font-size:12px;color:var(--muted)">This policy will be reviewed by a qualified legal advisor before Humraz handles clinical or highly sensitive health information at scale.</p>`,
+terms:`<h2>Terms of Use</h2><p style="font-size:12px;color:var(--muted);margin-bottom:14px">Last updated: ${new Date().toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric'})}</p><p><b>About this site.</b> Humraz's website is an information and referral service. It helps you learn about wellbeing support and connect with the Humraz team; it does not itself provide medical or psychological treatment.</p><p><b>Not an emergency service.</b> Humraz is not equipped to respond to emergencies. If you or someone else is in immediate danger, contact your local emergency services or the nearest hospital right away.</p><p><b>Professional support.</b> Any professional you are connected with through Humraz is responsible for their own qualifications, ethical conduct and clinical decisions. Humraz helps facilitate the connection but is not a substitute for licensed care.</p><p><b>Acceptable use.</b> Please use this site and Humraz's WhatsApp channels respectfully. Abusive, fraudulent or harmful use of these channels may result in access being withdrawn.</p><p><b>Changes.</b> These terms may be updated as Humraz's services grow. Continued use of the site after changes means you accept the updated terms.</p><p style="font-size:12px;color:var(--muted)">These terms are a working draft and should be reviewed by a qualified legal advisor before commercial launch.</p>`,
+safe:`<h2>Safeguarding</h2><p>Humraz is not an emergency service. If you or someone else is in immediate danger, please contact your local emergency services or go to the nearest hospital right away.</p><p><b>Our approach.</b> Every professional connected through Humraz is expected to hold appropriate qualifications, work within clear professional boundaries, and follow recognized ethical and confidentiality standards for their field.</p><p><b>Escalation.</b> If a safeguarding concern arises — for example, risk of serious harm to a client or someone else — the professional involved is expected to follow appropriate legal and ethical escalation procedures, which may include contacting emergency services.</p><p><b>Raising a concern.</b> If you ever feel unsafe, unheard or unhappy with the conduct of anyone connected through Humraz, please tell us directly on WhatsApp or at hamidalieducator@gmail.com so it can be looked into.</p>`
+};
+function openModal(type){content.innerHTML=forms[type]||forms.support;modal.classList.add('show');document.body.style.overflow='hidden'}
+document.querySelectorAll('[data-modal]').forEach(x=>x.addEventListener('click',e=>{e.preventDefault();openModal(x.dataset.modal)}));
+document.getElementById('close').onclick=()=>{modal.classList.remove('show');document.body.style.overflow=''};
+modal.onclick=e=>{if(e.target===modal){modal.classList.remove('show');document.body.style.overflow=''}};
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){modal.classList.remove('show');document.body.style.overflow=''}});
+document.getElementById('year').textContent=new Date().getFullYear();
+const menuBtn=document.getElementById('menu'),mobilePanel=document.getElementById('mobileNav'),mobileOverlay=document.getElementById('mobileOverlay');
+function setMenu(open){
+ menuBtn.classList.toggle('open',open);
+ menuBtn.setAttribute('aria-expanded',open);
+ mobilePanel.classList.toggle('open',open);
+ mobilePanel.setAttribute('aria-hidden',!open);
+ mobileOverlay.classList.toggle('show',open);
+ document.body.style.overflow=open?'hidden':'';
+}
+menuBtn.addEventListener('click',()=>setMenu(!mobilePanel.classList.contains('open')));
+document.getElementById('mobileClose').addEventListener('click',()=>setMenu(false));
+mobileOverlay.addEventListener('click',()=>setMenu(false));
+document.querySelectorAll('#mobileNav a, #mobileNav button').forEach(a=>a.addEventListener('click',()=>setMenu(false)));
+document.addEventListener('keydown',e=>{if(e.key==='Escape')setMenu(false)});
 
-          <div class="selection-bar light-selection">
-            <span id="selectionCount">0 areas selected</span>
-            <button class="clear light-clear" id="clearTopics" type="button">Clear all</button>
-          </div>
-
-          <div class="flow-step form-step">
-            <div class="step-number">2</div>
-            <div>
-              <strong>Complete your appointment request</strong>
-              <span>Your selected areas will automatically be included in your request.</span>
-            </div>
-          </div>
-
-          <div class="form-grid">
-            <form class="form-card" id="appointmentForm" novalidate>
-              <div class="fields">
-                <div class="field"><label for="name">Your name *</label><input id="name" name="name" autocomplete="name" required maxlength="80" placeholder="Full name"><div class="error" id="nameError"></div></div>
-                <div class="field"><label for="contact">Preferred contact *</label><input id="contact" name="contact" autocomplete="email" required maxlength="120" placeholder="Email, phone or LinkedIn"><div class="error" id="contactError"></div></div>
-                <div class="field"><label for="age">Age group</label><select id="age" name="age"><option value="">Prefer not to say</option><option>Under 13 (parent/guardian should make contact)</option><option>13–17 (parent/guardian may be involved)</option><option>18–24</option><option>25–34</option><option>35–44</option><option>45–54</option><option>55+</option></select></div>
-                <div class="field"><label for="mode">Preferred format</label><select id="mode" name="mode"><option>Online / remote</option><option>In-person</option><option>Either</option></select></div>
-                <div class="field full"><label for="message">Briefly tell Javeria what you would like help with</label><textarea id="message" name="message" maxlength="1000" placeholder="Share only what you are comfortable sharing. Avoid highly sensitive or emergency information here."></textarea><div class="hint">Maximum 1,000 characters.</div></div>
-                <div class="field full">
-                  <label class="consent"><input id="consent" type="checkbox" required><span>I understand this is an appointment request, not an emergency service or instant booking.</span></label>
-                  <div class="error" id="consentError"></div>
-                </div>
-              </div>
-              <button class="btn btn-primary" style="width:100%;margin-top:5px" type="submit">Prepare request & continue on WhatsApp ↗</button>
-              <div class="status" id="formStatus" role="status" aria-live="polite"></div>
-            </form>
-
-            <aside class="summary-card" aria-live="polite">
-              <div class="summary-badge">STEP 3 · READY TO SEND</div>
-              <h3 style="margin-top:8px;color:var(--navy)">Your WhatsApp request</h3>
-              <div id="summaryEmpty" class="summary-empty">Your selected areas and form details will appear here. Nothing is sent until you choose to continue to WhatsApp.</div>
-              <ul class="summary-list" id="summaryList" hidden></ul>
-              <div class="summary-actions">
-                <button class="btn btn-secondary" id="copySummary" type="button" disabled>Copy summary</button>
-                <a class="btn btn-wa" id="whatsappDirect" href="#" target="_blank" rel="noopener noreferrer">WhatsApp Javeria ↗</a>
-              </div>
-              <p class="summary-note">WhatsApp is the appointment channel. <a href="https://www.linkedin.com/in/javeria-atif-a07320261?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer">LinkedIn</a> is provided separately for professional credibility.</p>
-            </aside>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    
-
-<section class="psychologist-focus">
-  <div class="section">
-    <div class="psych-focus-grid">
-      <div class="hero-logo-lockup"><img src="assets/humraaz-logo.jpeg" alt="Humraaz — Your Story Stays Safe"></div>
-<div class="psych-focus-copy">
-        <span class="section-kicker">A space where you can finally be heard</span>
-        <h2>You do not have to carry everything alone.</h2>
-        <p class="psych-lead">Javeria Atif brings an Applied Psychology and Educational Counseling perspective to conversations with people who may have felt unheard, misunderstood, judged or unable to talk openly about what they have experienced.</p>
-        <p>Whether the concern comes from trauma, a painful experience, emotional distress, anxiety, relationships, academic pressure, family difficulties, life changes or simply feeling overwhelmed, the goal is to create a respectful space where your experience can be listened to seriously and without unnecessary judgement.</p>
-        <div class="psych-pills">
-          <span>Trauma-informed support</span><span>Compassionate listening</span><span>Individualised guidance</span><span>Confidential conversations</span>
-        </div>
-        <a class="btn btn-primary" href="#support">Explore how Javeria can help ↓</a>
-      </div>
-      <div class="psych-visual" aria-label="Psychology and wellbeing visual">
-        <div class="orbit orbit-one"></div>
-        <div class="orbit orbit-two"></div>
-        <div class="brain-glow">🧠</div>
-        <div class="floating-card card-one"><b>Be heard.</b><span>Your story matters.</span></div>
-        <div class="floating-card card-two"><b>Be understood.</b><span>No judgement.</span></div>
-        <div class="floating-card card-three"><b>Move forward.</b><span>At your pace.</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="therapy-approach">
-  <div class="section">
-    <div class="section-head centered">
-      <span class="section-kicker">How support can be tailored</span>
-      <h2>Support built around the person — not just the problem</h2>
-      <p class="lead">Different people need different forms of support. Javeria can explore a range of counseling and therapy-informed approaches according to the person's concerns, age, goals and circumstances, within her professional scope and appropriate referral pathways.</p>
-    </div>
-    <div class="therapy-cards">
-      <article><span class="therapy-icon">🫶</span><h3>Trauma & difficult experiences</h3><p>A calm, sensitive space to talk about distressing experiences, their emotional impact and healthier ways of coping.</p></article>
-      <article><span class="therapy-icon">🌿</span><h3>Emotional wellbeing</h3><p>Support for anxiety, stress, mood changes, overthinking, confidence and feeling emotionally overwhelmed.</p></article>
-      <article><span class="therapy-icon">🗣️</span><h3>Talk-based support</h3><p>Open, structured conversations that help you understand thoughts, emotions, patterns, relationships and personal goals.</p></article>
-      <article><span class="therapy-icon">🎓</span><h3>Student & academic support</h3><p>Guidance around academic pressure, adjustment, motivation, study stress, educational decisions and transitions.</p></article>
-      <article><span class="therapy-icon">👨‍👩‍👧</span><h3>Child, adolescent & parent guidance</h3><p>Age-appropriate support and guidance for children, adolescents, parents and families facing emotional or educational concerns.</p></article>
-      <article><span class="therapy-icon">🌱</span><h3>Personal growth & life transitions</h3><p>Support for self-understanding, confidence, communication, relationships, major changes and building a healthier direction.</p></article>
-    </div>
-    <div class="therapy-boundary"><strong>Important:</strong> Support is personalised and provided within professional competence. Where a concern requires a specialist, medical, psychiatric or emergency service, appropriate referral is recommended.</div>
-  </div>
-</section>
-
-<section id="experience" class="experience-section">
-  <div class="section">
-    <div class="section-head">
-      <span class="section-kicker">Experience & professional journey</span>
-      <h2>A lifelong connection with psychology, education & people</h2>
-      <p class="lead">Javeria's journey has been shaped by a long-standing personal and professional commitment to understanding people, supporting wellbeing and helping students, children and families navigate meaningful challenges.</p>
-    </div>
-
-    <div class="experience-intro">
-      <div class="experience-highlight">
-        <span class="highlight-icon">🧠</span>
-        <div>
-          <strong>Psychology at the centre of the journey</strong>
-          <p>Psychology is more than a title in Javeria's profile — it has been a lifelong area of learning, observation, empathy and professional development. Her Applied Psychology background is complemented by hands-on experience across counseling, education, student services, teaching and child-focused settings.</p>
-        </div>
-      </div>
-      <div class="experience-stats">
-        <div><b>Applied</b><span>Psychology</span></div>
-        <div><b>Student</b><span>Guidance</span></div>
-        <div><b>Child</b><span>Experience</span></div>
-        <div><b>Education</b><span>Support</span></div>
-      </div>
-    </div>
-
-    <div class="timeline">
-      <article class="timeline-item featured">
-        <div class="timeline-dot">01</div>
-        <div class="timeline-card">
-          <span class="timeline-tag">Current · Professional</span>
-          <h3>Educational Counselor</h3>
-          <p class="timeline-place">The IEIS Group Ltd Pakistan · Rawalpindi</p>
-          <p>Supporting students through educational decisions, student services, adjustment, confidence, academic pressure and future planning while bringing an applied-psychology perspective to individual guidance.</p>
-        </div>
-      </article>
-
-      <article class="timeline-item">
-        <div class="timeline-dot">02</div>
-        <div class="timeline-card">
-          <span class="timeline-tag">Child-focused experience</span>
-          <h3>Child Psychology Experience</h3>
-          <p class="timeline-place">Mind's Professional Therapy Center · Lahore</p>
-          <p>Experience in a child-focused professional environment, developing insight into child wellbeing, communication, emotional needs and age-appropriate support.</p>
-        </div>
-      </article>
-
-      <article class="timeline-item">
-        <div class="timeline-dot">03</div>
-        <div class="timeline-card">
-          <span class="timeline-tag">Education & development</span>
-          <h3>Teaching Professional</h3>
-          <p class="timeline-place">Rosans Islamic School · Lahore</p>
-          <p>Teaching experience strengthened classroom leadership, communication, problem solving and an understanding of the pressures and developmental needs students experience in educational settings.</p>
-        </div>
-      </article>
-
-      <article class="timeline-item">
-        <div class="timeline-dot">04</div>
-        <div class="timeline-card">
-          <span class="timeline-tag">Administration & students</span>
-          <h3>Administrative Officer</h3>
-          <p class="timeline-place">Unique Language School · Lahore</p>
-          <p>Worked in admissions and office administration, gaining practical experience with students, families, educational processes and day-to-day institutional support.</p>
-        </div>
-      </article>
-
-      <article class="timeline-item personal-journey">
-        <div class="timeline-dot">∞</div>
-        <div class="timeline-card">
-          <span class="timeline-tag">Lifelong personal journey</span>
-          <h3>A lifelong perspective on people & psychology</h3>
-          <p>Long before professional roles, Javeria's interest in psychology grew through a sustained curiosity about human behaviour, emotions, relationships, learning and personal development. That lifelong perspective continues to shape a calm, empathetic and person-centred approach to every conversation.</p>
-        </div>
-      </article>
-    </div>
-
-    <div class="experience-note">
-      <strong>Professional approach</strong>
-      <span>Warm, respectful, practical and individualised — with clear boundaries and appropriate referral when a concern requires a different level or type of professional care.</span>
-    </div>
-  </div>
-</section>
-<section>
-      <div class="section">
-        <div class="disclaimer"><strong>Important:</strong> This website is for professional appointment requests and general support information. It is not an emergency service, crisis line, medical diagnosis service, or substitute for urgent care. If you or someone else is in immediate danger, contact your local emergency services or an appropriate qualified emergency professional.</div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="footer-inner"><div><strong>Javeria Atif</strong><br><span>Applied Psychology & Educational Counseling</span></div><a href="https://www.linkedin.com/in/javeria-atif-a07320261?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer">View professional LinkedIn profile ↗</a></div>
-  </footer>
-  <button class="backtop" id="backtop" aria-label="Back to top">↑</button>
-
-<script id="javeria-final-mobile-navigation-js">
-(() => {
-  "use strict";
-  const menuButton=document.getElementById("mobileMenuToggle");
-  const menu=document.getElementById("mobileNavigation");
-  const backButton=document.getElementById("mobileBack");
-  function closeMenu(){
-    if(!menu||!menuButton) return;
-    menu.classList.remove("open");
-    menuButton.classList.remove("active");
-    menuButton.setAttribute("aria-expanded","false");
-    menuButton.setAttribute("aria-label","Open navigation");
-  }
-  if(menuButton&&menu){
-    menuButton.addEventListener("click",e=>{
-      e.stopPropagation();
-      const open=menu.classList.toggle("open");
-      menuButton.classList.toggle("active",open);
-      menuButton.setAttribute("aria-expanded",open?"true":"false");
-      menuButton.setAttribute("aria-label",open?"Close navigation":"Open navigation");
-    });
-    menu.querySelectorAll("a").forEach(a=>a.addEventListener("click",closeMenu));
-    document.addEventListener("click",e=>{
-      if(menu.classList.contains("open")&&!menu.contains(e.target)&&!menuButton.contains(e.target)) closeMenu();
-    });
-  }
-  if(backButton){
-    backButton.addEventListener("click",()=>{
-      closeMenu();
-      if(window.history.length>1) window.history.back();
-      else window.location.hash="top";
-    });
-  }
-  document.addEventListener("keydown",e=>{ if(e.key==="Escape") closeMenu(); });
-  window.addEventListener("resize",()=>{ if(window.innerWidth>700) closeMenu(); });
-})();
+function sendWhatsApp(e){
+ e.preventDefault();
+ const name=document.getElementById('waName').value.trim();
+ const contact=document.getElementById('waContact').value.trim();
+ const topic=document.getElementById('waTopic').value;
+ const message=document.getElementById('waMessage').value.trim();
+ const text=`Humraz Support Request\n\nName: ${name}\nContact: ${contact}\nTopic: ${topic}\nMessage: ${message}`;
+ window.open('https://wa.me/923245346975?text='+encodeURIComponent(text),'_blank','noopener');
+}
 </script>
+<div class="toast" id="toast"></div><button class="backtop" id="backtop" aria-label="Back to top">↑</button>
+
+
+
+
+
 
 <script>
-(() => {
-  "use strict";
-  const LINKEDIN = "https://www.linkedin.com/in/javeria-atif-a07320261?utm_source=share_via&utm_content=profile&utm_medium=member_android";
-  // CHANGE THIS NUMBER LATER IN ONE PLACE:
-  const WHATSAPP_NUMBER = "923245346975"; // 03245346975
-  const topics = [
-  ["trauma","Trauma & difficult experiences","Support after distressing or overwhelming experiences.","🧠"],
-  ["mood","Mood changes & emotional ups and downs","Understanding changes in mood, emotions or motivation.","🌦️"],
-  ["anxiety","Anxiety, worry & overthinking","Support with persistent worry, fear, uncertainty or racing thoughts.","💭"],
-  ["stress","Stress & feeling overwhelmed","Managing pressure, overload, demands and emotional exhaustion.","🌿"],
-  ["confidence","Self-confidence & self-esteem","Building confidence, self-worth and a healthier self-image.","✨"],
-  ["academic","Academic pressure & study concerns","Support with academic stress, exams, study habits and performance pressure.","📚"],
-  ["career","Career & education decisions","Guidance around educational choices, career direction and future plans.","🎯"],
-  ["adjustment","Student adjustment & transition","Support with adapting to university, school, a new environment or routine.","🎓"],
-  ["relationships","Relationships & communication","Exploring communication, boundaries, conflict and interpersonal challenges.","🤝"],
-  ["growth","Personal growth & self-understanding","Reflection, personal development, strengths and meaningful goals.","🌱"],
-  ["child","Child & adolescent concerns","Age-appropriate support around emotional, behavioural, school or developmental concerns.","👧"],
-  ["sleep","Sleep, routine & lifestyle concerns","Support with routines, sleep-related difficulties and everyday functioning.","🌙"],
-  ["transitions","Life transitions & major changes","Support through separation, relocation, loss, new roles or other major changes.","🔄"],
-  ["parent","Parent / student guidance","Guidance for parents, students and families around educational or personal concerns.","👨‍👩‍👧"],
-  ["wellbeing","Emotional wellbeing & coping","Developing healthier coping strategies and understanding emotional responses.","💙"],
-  ["custom","Something else","Describe another concern that is not listed above.","➕"]
-];
-
-const selected = new Set();
-const grid = document.getElementById("topicGrid");
-const count = document.getElementById("selectionCount");
-const clear = document.getElementById("clearTopics");
-const customWrap = document.getElementById("customConcernWrap");
-const customInput = document.getElementById("customConcern");
-const form = document.getElementById("appointmentForm");
-const summaryList = document.getElementById("summaryList");
-const summaryEmpty = document.getElementById("summaryEmpty");
-const copyBtn = document.getElementById("copySummary");
-const status = document.getElementById("formStatus");
-let lastSummary = "";
-
-function escapeHtml(v){
-  return String(v).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]));
+const HUMRAZ_WHATSAPP="923245346975";
+const HUMRAZ_GROUP_LINK="https://chat.whatsapp.com/REPLACE_WITH_YOUR_HUMRAZ_GROUP_LINK";
+function humrazWhatsApp(topic="Humraz Support"){
+ const msg=`Hello Humraz, I would like to connect regarding: ${topic}.`;
+ window.open(`https://wa.me/${HUMRAZ_WHATSAPP}?text=${encodeURIComponent(msg)}`,'_blank','noopener');
 }
-function getSelectedNames(){
-  return topics.filter(t=>selected.has(t[0])).map(t=>t[1]);
-}
-function renderTopics(){
-  grid.innerHTML=topics.map(([id,title,desc,icon])=>
-    `<button type="button" class="topic ${selected.has(id)?"selected":""}" data-topic="${id}" aria-pressed="${selected.has(id)}">
-      <span class="topic-icon">${icon}</span><b>${title}</b><span>${desc}</span>
-    </button>`).join("");
-  grid.querySelectorAll(".topic").forEach(btn=>btn.addEventListener("click",()=>{
-    const id=btn.dataset.topic;
-    selected.has(id)?selected.delete(id):selected.add(id);
-    if(id==="custom") customWrap.hidden=!selected.has("custom");
-    updateCount(); updateSummaryPreview();
-    if(id==="custom" && selected.has("custom")) customInput.focus();
-  }));
-}
-function updateCount(){
-  count.textContent=selected.size ? `${selected.size} area${selected.size===1?"":"s"} selected` : "No areas selected yet";
-  clear.disabled=selected.size===0;
-}
-function buildSummary(){
-  const name=document.getElementById("name").value.trim();
-  const contact=document.getElementById("contact").value.trim();
-  const age=document.getElementById("age").value||"Not specified";
-  const mode=document.getElementById("mode").value;
-  const message=document.getElementById("message").value.trim()||"No additional details provided.";
-  const areas=getSelectedNames();
-  const custom=customInput.value.trim();
-  return [
-    "APPOINTMENT REQUEST — JAVERIA ATIF",
-    "",
-    "Areas of concern: "+(areas.join(", ")||"Not selected"),
-    ...(custom ? ["Additional concern: "+custom] : []),
-    "Name: "+(name||"Not entered"),
-    "Preferred contact: "+(contact||"Not entered"),
-    "Age group: "+age,
-    "Preferred format: "+mode,
-    "Additional message: "+message
-  ].join("\n");
-}
-function updateSummaryPreview(){
-  const areas=getSelectedNames();
-  const custom=customInput.value.trim();
-  const rows=[
-    ["Areas",areas.join(", ")||"Not selected"],
-    ...(custom?[["Additional concern",custom]]:[]),
-    ["Name",document.getElementById("name").value.trim()||"Not entered"],
-    ["Contact",document.getElementById("contact").value.trim()||"Not entered"],
-    ["Format",document.getElementById("mode").value]
-  ];
-  summaryList.innerHTML=rows.map(r=>`<li><strong>${escapeHtml(r[0])}:</strong> ${escapeHtml(r[1])}</li>`).join("");
-  summaryList.hidden=false;
-  summaryEmpty.hidden=true;
-}
-function err(id,msg){document.getElementById(id).textContent=msg;}
-function validate(){
-  let ok=true;
-  const name=document.getElementById("name").value.trim();
-  const contact=document.getElementById("contact").value.trim();
-  const consent=document.getElementById("consent").checked;
-  err("nameError",name.length<2?"Please enter your name.":"");
-  err("contactError",contact.length<3?"Please enter a contact method.":"");
-  err("consentError",!consent?"Please confirm the appointment-request notice.":"");
-  if(name.length<2||contact.length<3||!consent) ok=false;
-  if(selected.size===0){
-    status.textContent="Please select at least one area of concern.";
-    status.className="status show bad";
-    grid.scrollIntoView({behavior:"smooth",block:"center"});
-    ok=false;
-  }
-  if(selected.has("custom")&&!customInput.value.trim()){
-    status.textContent='Please describe your concern in the "Something else" box.';
-    status.className="status show bad";
-    customWrap.hidden=false; customInput.focus(); ok=false;
-  }
-  return ok;
-}
-document.querySelectorAll("#appointmentForm input,#appointmentForm textarea,#appointmentForm select").forEach(el=>el.addEventListener("input",updateSummaryPreview));
-form.addEventListener("submit",e=>{
+document.addEventListener('click',e=>{
+ const wa=e.target.closest('[data-wa-topic]');
+ if(wa){e.preventDefault();humrazWhatsApp(wa.dataset.waTopic);return;}
+ const action=e.target.closest('[data-action="whatsapp"]');
+ if(action){e.preventDefault();humrazWhatsApp(action.dataset.topic||"General support");return;}
+});
+document.getElementById('communityGroupLink')?.addEventListener('click',e=>{
+ if(HUMRAZ_GROUP_LINK.includes('REPLACE_WITH')){
   e.preventDefault();
-  if(!validate()) return;
-  lastSummary=buildSummary();
-  summaryList.hidden=false; summaryEmpty.hidden=true; copyBtn.disabled=false;
-  updateSummaryPreview();
-  let copied=false;
-  try{
-    if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(lastSummary);copied=true;}
-  }catch(_){}
-  status.textContent=copied?"Request summary copied. WhatsApp will open next.":"Your request is ready. WhatsApp will open next.";
-  status.className="status show";
-  const waText="Hello Javeria, I would like to request an appointment.\n\n"+lastSummary;
-  const waUrl="https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(waText);
-  window.open(waUrl,"_blank","noopener,noreferrer");
+  humrazWhatsApp('Joining the Humraz Community');
+ }
 });
-copyBtn.addEventListener("click",async()=>{
-  lastSummary=buildSummary();
-  try{
-    await navigator.clipboard.writeText(lastSummary);
-    status.textContent="Summary copied to clipboard.";
-    status.className="status show";
-  }catch(_){
-    status.textContent="Copy was blocked by the browser. You can copy the summary from this section manually.";
-    status.className="status show bad";
-  }
+document.querySelectorAll('.support-card').forEach(card=>{
+ const topic=card.querySelector('h3')?.textContent?.trim()||'Support';
+ card.addEventListener('click',e=>{if(!e.target.closest('button,a'))humrazWhatsApp(topic)});
 });
-clear.addEventListener("click",()=>{
-  selected.clear(); customInput.value=""; customWrap.hidden=true;
-  renderTopics(); updateCount(); updateSummaryPreview();
+document.querySelectorAll('.readmore').forEach(btn=>{
+ btn.addEventListener('click',()=>{
+  const panel=document.getElementById(btn.dataset.read);
+  if(panel){panel.classList.toggle('open');btn.textContent=panel.classList.contains('open')?'Read less ↑':'Read more →';}
+ });
 });
-document.getElementById("whatsappDirect").href="https://wa.me/"+WHATSAPP_NUMBER;
-renderTopics(); updateCount(); updateSummaryPreview();
+document.querySelectorAll('.faq-q').forEach(q=>q.addEventListener('click',()=>{
+ const item=q.parentElement; item.classList.toggle('open');
+ const s=q.querySelector('span');if(s)s.textContent=item.classList.contains('open')?'−':'+';
+}));
+document.querySelectorAll('.filter-btn').forEach(btn=>btn.addEventListener('click',()=>{
+ const row=btn.closest('.filter-row'); if(!row)return;
+ row.querySelectorAll('.filter-btn').forEach(x=>x.classList.remove('active'));btn.classList.add('active');
+ const f=btn.dataset.filter;
+ if(!f)return;
+ document.querySelectorAll('#support .support-card').forEach(card=>{
+  card.style.display=(f==='all'||card.dataset.category==='all'||card.dataset.category===f)?'block':'none';
+ });
+}));
+const reviewBox=document.getElementById('reviews');
+let reviewIndex=0;
+function reviewScroll(dir){
+ if(!reviewBox)return;
+ const cards=[...reviewBox.children]; if(!cards.length)return;
+ reviewIndex=(reviewIndex+dir+cards.length)%cards.length;
+ cards[reviewIndex].scrollIntoView({behavior:'smooth',block:'nearest',inline:'center'});
+}
+document.getElementById('prevReview')?.addEventListener('click',()=>reviewScroll(-1));
+document.getElementById('nextReview')?.addEventListener('click',()=>reviewScroll(1));
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(e=>observer.observe(e));
+const back=document.getElementById('backtop');
+window.addEventListener('scroll',()=>back?.classList.toggle('show',scrollY>600));
+back?.addEventListener('click',()=>scrollTo({top:0,behavior:'smooth'}));
 
-})();
+/* === 3D pointer tilt for cards === */
+const reduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if(!reduceMotion && matchMedia('(hover:hover)').matches){
+ document.querySelectorAll('.tilt-el').forEach(el=>{
+  el.addEventListener('pointermove',e=>{
+   const r=el.getBoundingClientRect();
+   const x=(e.clientX-r.left)/r.width-.5, y=(e.clientY-r.top)/r.height-.5;
+   el.style.transform=`perspective(700px) rotateX(${(-y*9).toFixed(2)}deg) rotateY(${(x*9).toFixed(2)}deg) translateZ(4px)`;
+  });
+  el.addEventListener('pointerleave',()=>{el.style.transform='';});
+ });
+}
 </script>
 </body>
 </html>
