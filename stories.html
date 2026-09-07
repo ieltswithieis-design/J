@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Humraz Stories — Learn Through Real Experiences</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+:root{--p:#4B2E83;--p2:#35205f;--blush:#F6E3E8;--cream:#FFF9F6;--ink:#29262D;--muted:#706A74;--line:#E9E1E8}
+*{box-sizing:border-box}body{margin:0;font-family:"DM Sans",sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
+a{text-decoration:none;color:inherit}.container{max-width:1180px;margin:auto;padding:0 22px}
+header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}.nav{height:74px;display:flex;align-items:center;justify-content:space-between}.brand{font:700 29px "Playfair Display";color:var(--p)}.brand span{display:inline-grid;place-items:center;width:36px;height:36px;border-radius:50% 50% 50% 8px;background:var(--p);color:#fff;font:700 16px "DM Sans"}
+.nav a:not(.brand){font-weight:700;color:var(--muted);margin-left:20px}.hero{padding:75px 0;background:linear-gradient(135deg,#fff,var(--cream),#f1e7f4)}.hero h1{font:700 clamp(42px,7vw,74px)/1.05 "Playfair Display";margin:0 0 15px}.hero h1 em{font-style:normal;color:var(--p)}.hero p{max-width:700px;color:var(--muted);font-size:18px}.btn{border:0;border-radius:999px;padding:13px 21px;font-weight:700;cursor:pointer}.primary{background:var(--p);color:#fff}.soft{background:var(--blush);color:var(--p)}
+.controls{padding:32px 0 15px}.search{width:100%;padding:15px 18px;border:1px solid var(--line);border-radius:14px;font-size:16px;outline:none;background:#fff}.search:focus{border-color:var(--p)}.filters{display:flex;gap:9px;flex-wrap:wrap;margin-top:15px}.filter{border:1px solid var(--line);background:#fff;padding:9px 14px;border-radius:999px;font-weight:700;cursor:pointer}.filter.active{background:var(--p);color:#fff;border-color:var(--p)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:25px 0 70px}.card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:24px;display:flex;flex-direction:column;transition:.25s}.card:hover{transform:translateY(-5px);box-shadow:0 20px 45px rgba(75,46,131,.12)}.tag{font-size:12px;color:var(--p);font-weight:800;text-transform:uppercase;letter-spacing:.08em}.card h2{font:600 26px/1.2 "Playfair Display";margin:10px 0}.meta{font-size:13px;color:var(--muted);margin-bottom:10px}.excerpt{color:var(--muted);flex:1}.read{color:var(--p);font-weight:800;background:none;border:0;padding:10px 0 0;text-align:left;cursor:pointer}
+.submit-box{background:var(--p2);color:#fff;border-radius:30px;padding:40px;margin:0 0 60px}.submit-box h2{font:600 36px "Playfair Display";margin:0}.submit-box p{opacity:.8}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:13px}.input,textarea,select{width:100%;padding:13px;border:0;border-radius:12px;font:inherit}textarea{min-height:190px;resize:vertical}.full{grid-column:1/-1}.counter{text-align:right;font-size:13px;margin-top:6px}.counter.limit{color:#ffb5b5}.notice{font-size:12px;opacity:.75;margin-top:12px}
+.modal{display:none;position:fixed;inset:0;background:rgba(20,10,25,.6);z-index:30;padding:20px;align-items:center;justify-content:center}.modal.show{display:flex}.dialog{background:#fff;width:min(760px,100%);max-height:85vh;overflow:auto;border-radius:24px;padding:35px;position:relative}.close{position:absolute;right:15px;top:10px;border:0;background:none;font-size:30px;cursor:pointer}.dialog h2{font:600 38px/1.15 "Playfair Display";padding-right:35px}.story-content{white-space:pre-wrap;color:#4d4851;font-size:17px}footer{background:#241b2d;color:#ddd;padding:30px;text-align:center}
+@media(max-width:800px){.grid{grid-template-columns:1fr 1fr}.formgrid{grid-template-columns:1fr}.full{grid-column:auto}.nav-links{display:none}}@media(max-width:550px){.grid{grid-template-columns:1fr}.hero{padding:55px 0}.submit-box{padding:25px}.dialog{padding:25px}}
+</style>
+</head>
+<body>
+<header><div class="container nav"><a class="brand" href="index.html"><span>H</span> Humraz</a><div class="nav-links"><a href="index.html">Home</a><a href="#stories">Stories</a><a href="#share">Share Your Story</a></div></div></header>
+<section class="hero"><div class="container"><div class="tag">Humraz Community Library</div><h1>Stories that help us <em>learn.</em></h1><p>Read real experiences, discover lessons from different lives, and share your own story to help someone else. Every story is limited to a maximum of 500 words.</p><a class="btn primary" href="#share">Share Your Story</a></div></section>
+<main class="container" id="stories">
+<div class="controls"><input class="search" id="search" placeholder="Search stories, authors, countries or lessons..."><div class="filters" id="filters"></div></div>
+<div class="grid" id="grid"></div>
+<section class="submit-box" id="share"><h2>Share a story. Help someone learn.</h2><p>Your story can be submitted anonymously. Maximum: 500 words.</p>
+<form id="storyForm"><div class="formgrid">
+<input class="input" id="title" required maxlength="100" placeholder="Story title">
+<input class="input" id="author" maxlength="60" placeholder="Your name (leave blank for Anonymous)">
+<select id="category" required><option value="">Choose category</option><option>Personal Growth</option><option>Student Experiences</option><option>Career & Challenges</option><option>Relationships</option><option>Life Experiences</option><option>Overcoming Difficulties</option><option>Lessons Learned</option><option>Inspirational Stories</option></select>
+<input class="input" id="country" maxlength="60" placeholder="Country (optional)">
+<div class="full"><textarea id="content" required placeholder="Write your story here..."></textarea><div class="counter" id="counter">0 / 500 words</div></div>
+<div class="full"><button class="btn soft" type="submit">Submit My Story</button><div class="notice">Demo mode: the form validates your story and prepares it for repository storage. For public GitHub submissions, connect the included secure API endpoint described in README.md.</div></div>
+</div></form></section></main>
+<div class="modal" id="modal"><div class="dialog"><button class="close" onclick="closeModal()">×</button><div id="modalBody"></div></div></div>
+<footer>© <span id="year"></span> Humraz Stories — Real stories. Real lessons. Shared to help others learn.</footer>
+<script>
+let stories=[],active='All';
+const categories=['All','Personal Growth','Student Experiences','Career & Challenges','Relationships','Life Experiences','Overcoming Difficulties','Lessons Learned','Inspirational Stories'];
+const grid=document.getElementById('grid'),filters=document.getElementById('filters');
+categories.forEach(c=>{const b=document.createElement('button');b.className='filter'+(c==='All'?' active':'');b.textContent=c;b.onclick=()=>{active=c;document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));b.classList.add('active');render()};filters.appendChild(b)});
+function esc(s){return String(s||'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]))}
+function words(t){return (t.trim().match(/\S+/g)||[]).length}
+function render(){const q=document.getElementById('search').value.toLowerCase();const list=stories.filter(s=>(active==='All'||s.category===active)&&(`${s.title} ${s.author} ${s.country} ${s.category} ${s.content}`).toLowerCase().includes(q));grid.innerHTML=list.length?list.map((s,i)=>`<article class="card"><div class="tag">${esc(s.category)}</div><h2>${esc(s.title)}</h2><div class="meta">By ${esc(s.author||'Anonymous')} ${s.country?'· '+esc(s.country):''} · ${words(s.content)} words</div><p class="excerpt">${esc(s.content.slice(0,180))}${s.content.length>180?'...':''}</p><button class="read" onclick="openStory(${stories.indexOf(s)})">Read full story →</button></article>`).join(''):'<p>No stories found.</p>'}
+function openStory(i){const s=stories[i];document.getElementById('modalBody').innerHTML=`<div class="tag">${esc(s.category)}</div><h2>${esc(s.title)}</h2><div class="meta">By ${esc(s.author||'Anonymous')} ${s.country?'· '+esc(s.country):''}</div><div class="story-content">${esc(s.content)}</div><p class="meta">${words(s.content)} / 500 words</p>`;document.getElementById('modal').classList.add('show')}
+function closeModal(){document.getElementById('modal').classList.remove('show')}
+document.getElementById('modal').onclick=e=>{if(e.target.id==='modal')closeModal()}
+document.getElementById('search').oninput=render;
+const content=document.getElementById('content'),counter=document.getElementById('counter');
+content.oninput=()=>{let a=content.value.trim().match(/\S+/g)||[];if(a.length>500){content.value=a.slice(0,500).join(' ');a=a.slice(0,500)}counter.textContent=`${a.length} / 500 words`;counter.classList.toggle('limit',a.length>=500)}
+document.getElementById('storyForm').onsubmit=e=>{e.preventDefault();const n=words(content.value);if(n===0||n>500)return alert('Your story must contain between 1 and 500 words.');alert('Story validated successfully! To make public submissions automatically save to GitHub, deploy the included secure API endpoint and connect it as described in README.md.');e.target.reset();counter.textContent='0 / 500 words';counter.classList.remove('limit')};
+fetch('data/stories.json').then(r=>r.json()).then(d=>{stories=d;render()}).catch(()=>{grid.innerHTML='<p>Unable to load stories. Open this website through GitHub Pages or a local server.</p>'});
+document.getElementById('year').textContent=new Date().getFullYear();
+</script></body></html>
